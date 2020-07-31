@@ -7,9 +7,11 @@ import {
     IconButton,
     useMediaQuery,
     useTheme,
-    MenuItem,
-    Menu,
-    Box
+    ListItem,
+    List,
+    Box,
+    Button,
+    Drawer
 } from '@material-ui/core'
 import MenuIcon from '@material-ui/icons/Menu';
 import NavBarLink from './navbarlink';
@@ -29,6 +31,12 @@ const useStyles = makeStyles((theme) => ({
     flex: 1,
     marginLeft: 'auto',
     justifyContent: 'space-evenly'
+  },
+  list: {
+    width: 200,
+    textAlign: 'center',
+    justifyContent: 'space-between',
+    marginTop: 70
   },
   offset: theme.mixins.toolbar,
 }));
@@ -50,7 +58,7 @@ export default function MenuAppBar() {
 
   return (
     <div className={classes.root}>
-        <AppBar position="fixed" style={{ background: 'transparent',}}>
+        <AppBar position="fixed" color="primary">
             <Toolbar>
                 <Typography variant="h6" className={classes.title}>
                     SHREESH D NAYAK
@@ -67,31 +75,30 @@ export default function MenuAppBar() {
                         >
                             <MenuIcon />
                         </IconButton>
-                        <Menu
-                            id="menu-appbar"
-                            anchorEl={anchorEl}
-                            anchorOrigin={{
-                            vertical: 'top',
-                            horizontal: 'right',
-                            }}
-                            keepMounted
-                            transformOrigin={{
-                            vertical: 'top',
-                            horizontal: 'right',
-                            }}
+                        <Drawer
+                            anchor="right"
                             open={open}
                             onClose={handleClose}
+                            variant="temporary"
                         >
-                            <MenuItem onClick={handleClose}>About</MenuItem>
-                            <MenuItem onClick={handleClose}>Projects</MenuItem>
-                            <MenuItem onClick={handleClose}>Contact</MenuItem>
-                        </Menu>
+                          <List className={classes.list}>
+                            <NavBarLink to="about" name="ABOUT"/>
+                            <NavBarLink to="projects" name="PROJECTS"/>
+                            <NavBarLink to="contact" name="CONTACT"/>
+                            <Button variant="contained" color="secondary" style={{margin: 10}}>
+                              <Typography>Resume</Typography>
+                            </Button>
+                          </List>
+                        </Drawer>
                     </> 
                     :
                     <Box className={classes.headerOptions}>
                         <NavBarLink to="about" name="ABOUT"/>
                         <NavBarLink to="projects" name="PROJECTS"/>
                         <NavBarLink to="contact" name="CONTACT"/>
+                        <Button variant="contained" color="secondary">
+                          <Typography>Resume</Typography>
+                        </Button>
                     </Box>
                 }
             </div>

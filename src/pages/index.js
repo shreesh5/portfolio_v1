@@ -6,6 +6,7 @@ import "../components/layout.css"
 import MenuAppBar from '../components/header'
 import Landing from '../components/landing'
 import About from '../components/about'
+import Footer from '../components/footer'
 
 const IndexPage = () => (
   <>
@@ -13,6 +14,7 @@ const IndexPage = () => (
     <SEO title="Home" />
     <Landing />
     <About />
+    <Footer />
   </>
 )
 
