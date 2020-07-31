@@ -3,11 +3,14 @@ import { Link } from "gatsby"
 
 import SEO from "../components/seo"
 import "../components/layout.css"
+import Landing from '../components/landing'
+import MenuAppBar from '../components/header'
 
 const IndexPage = () => (
   <>
+    <MenuAppBar />
     <SEO title="Home" />
-    <h1>Hi people</h1>
+    <Landing />
   </>
 )
 
