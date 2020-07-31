@@ -2,7 +2,6 @@ import React from 'react'
 import './landing.css'
 import { graphql, useStaticQuery } from 'gatsby'
 import Img from 'gatsby-image'
-import { Link } from 'react-scroll'
 import { Typography } from '@material-ui/core'
 
 const Landing = () => {
