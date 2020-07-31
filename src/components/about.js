@@ -1,10 +1,11 @@
 import React from 'react'
 import './about.css'
+import { Typography } from '@material-ui/core'
 
 const About = () => {
     return (
         <div className="about-section" id="about">
-            <h1 className="text-center">About</h1>
+            <Typography variant="h3">About</Typography>
         </div>
     )
 }

@@ -1,0 +1,15 @@
+.contact-section {
+    background-color: #e0e0e0;
+    text-align: center;
+    height: 300px;
+    width: 100%;
+    padding-top: 30px;
+}
+.icon-box {
+    justify-content: space-evenly;
+    border-color: black;
+    border-width: 2px;
+    display: flex;
+    flex-direction: row;
+    padding-top: 50px;
+}

@@ -1,11 +1,11 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import SEO from "../components/seo"
 import "../components/layout.css"
 import MenuAppBar from '../components/header'
 import Landing from '../components/landing'
 import About from '../components/about'
+import Contact from '../components/contact'
 import Footer from '../components/footer'
 
 const IndexPage = () => (
@@ -14,6 +14,7 @@ const IndexPage = () => (
     <SEO title="Home" />
     <Landing />
     <About />
+    <Contact />
     <Footer />
   </>
 )
