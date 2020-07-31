@@ -82,12 +82,12 @@ export default function MenuAppBar() {
                             variant="temporary"
                         >
                           <List className={classes.list}>
-                            <NavBarLink to="about" name="ABOUT"/>
-                            <NavBarLink to="projects" name="PROJECTS"/>
-                            <NavBarLink to="contact" name="CONTACT"/>
-                            <Button variant="contained" color="secondary" style={{margin: 10}}>
-                              <Typography>Resume</Typography>
-                            </Button>
+                            <ListItem><NavBarLink to="about" name="ABOUT"/></ListItem>
+                            <ListItem><NavBarLink to="projects" name="PROJECTS"/></ListItem>
+                            <ListItem><NavBarLink to="contact" name="CONTACT"/></ListItem>
+                            <ListItem><Button variant="contained" color="secondary">
+                              Resume
+                            </Button></ListItem>
                           </List>
                         </Drawer>
                     </> 
