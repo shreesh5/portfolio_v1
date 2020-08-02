@@ -10,7 +10,7 @@ import Contact from '../components/contact'
 import Footer from '../components/footer'
 
 const IndexPage = () => (
-  <>
+  <React.Fragment>
     <MenuAppBar />
     <SEO title="Home" />
     <Landing />
@@ -18,7 +18,7 @@ const IndexPage = () => (
     <Projects />
     <Contact />
     <Footer />
-  </>
+  </React.Fragment>
 )
 
 export default IndexPage
