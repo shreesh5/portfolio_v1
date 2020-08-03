@@ -45,9 +45,10 @@ const About = () => {
 
     return (
         <div className="about-section" id="about">
-            <Typography variant="h3">About</Typography>
+            <Typography variant="h3">About Me</Typography>
             <Grid 
                 container
+                spacing={3}
                 style={{
                     padding: 50,
                     width: '100%',
@@ -55,15 +56,15 @@ const About = () => {
                     flexWrap: 'wrap'
                 }}
             >
-                <Grid item xs={12} md={6} style={{ paddingRight: 50 }} align="right">
-                    <Paper elevation={15} style={{ marginBottom: 50, maxWidth: 400, }}>
+                <Grid item xs={12} md={6} align="right">
+                    <Paper elevation={15} style={{ maxWidth: 450, minWidth: 400 }}>
                         <Img 
                             fluid={data.profilePicture.childImageSharp.fluid}
                         />
                     </Paper>
                 </Grid>
-                <Grid item xs={12} md={6}  align="left" >
-                    <Box style={{flexDirection: 'column', display: 'flex', minWidth: 300, maxWidth: 500, height: 535}}>
+                <Grid item xs={12} md={6}  align="left">
+                    <Box style={{flexDirection: 'column', display: 'flex', minWidth: 400, maxWidth: 500, height: "100%"}} border={1}>
                         <BulletPoint 
                             title="What I Aspire to Do"        
                             text = "My goal as a developer is to build applications that make a difference and improve lives. I beleive that through code we can make the world a better place by building products that empower people and make life easier."
@@ -75,6 +76,22 @@ const About = () => {
                         <BulletPoint 
                             title="When I'm not coding, I'm"
                             text ="Playing Football | Watching Anime | Exercising | Reading | Learning New Languages"
+                        />
+                    </Box>
+                </Grid>
+                <Grid item xs={12} align="center">
+                    <Box border={1} width="55%" display="flex" flexDirection="row" justifyContent="space-between" marginLeft={6}>
+                        <BulletPoint
+                            title="Toolbox"
+                            text="Languages"
+                        />
+                        <BulletPoint
+                            title="On the Radar"
+                            text="Languages"
+                        />
+                        <BulletPoint
+                            title="Hacking on"
+                            text="Languages"
                         />
                     </Box>
                 </Grid>
