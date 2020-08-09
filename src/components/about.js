@@ -127,7 +127,7 @@ const About = () => {
                         display="flex" 
                         flexDirection={!isMobile ? "row" : "column"} 
                         justifyContent="space-between" 
-                        width={!isMobile ? "55.5%" : "100%"}
+                        width={!isMobile ? "55%" : "100%"}
                         marginLeft={!isSmall ? 6 : 0} 
                     >
                         <BottomBulletPoint
