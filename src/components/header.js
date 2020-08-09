@@ -61,7 +61,7 @@ export default function MenuAppBar() {
         <AppBar position="fixed" color="primary">
             <Toolbar>
                 <Typography variant="h6" className={classes.title}>
-                    SHREESH D NAYAK
+                    SHREESH NAYAK
                 </Typography>
             <div>
                 { isMobile ? 
