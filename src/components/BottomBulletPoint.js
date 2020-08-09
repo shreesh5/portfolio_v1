@@ -23,7 +23,7 @@ const BottomBulletPoint = ({ isMobile, icon, title, points }) => {
     }
 
     return (
-        <Box border={1} className={!isMobile ? classes.defaultStyle : classes.mobileStyle}>
+        <Box border={1} className={!isMobile ? classes.defaultStyle : classes.mobileStyle} style={{ marginBottom: 15}}>
             <Box style={{flexDirection: 'row', display: 'flex'}}>
                 {
                     iconMap[icon]

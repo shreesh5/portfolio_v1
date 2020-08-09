@@ -96,7 +96,8 @@ const About = () => {
                     padding: 50,
                     width: '100%',
                     display: 'flex',
-                    flexWrap: 'wrap'
+                    flexWrap: 'wrap',
+                    marginBottom: 15
                 }}
             >
                 <Grid item xs={12} sm={12} md={12} lg={6} align={!isMedium ? "right" : "center"}>
