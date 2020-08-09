@@ -66,7 +66,7 @@ const About = () => {
         },
         {
             "title": "On The Radar: ",
-            "text": "Search Engine Optimization",
+            "text": "SEO",
         }
     ]
 
@@ -100,10 +100,10 @@ const About = () => {
                     </Paper>
                 </Grid>
                 <Grid item xs={12} md={6}  align="left">
-                    <Box style={{flexDirection: 'column', display: 'flex', minWidth: 400, maxWidth: 500, height: "100%"}}>
+                    <Box border={1} style={{flexDirection: 'column', display: 'flex', minWidth: 400, maxWidth: 500, height: "100%"}}>
                         <BulletPoint 
                             title="What I Aspire to Do"        
-                            text = "My goal as an software engineer is to build applications that make an impact and improve lives. I beleive that through code we can make the world a better place by building products that empower people and make life easier."
+                            text = "My goal as a software engineer is to build applications that make an impact and improve lives. I beleive that through code we can make the world a better place by building products that empower people and make life easier."
                         />
                         <BulletPoint 
                             title="What I'm Currently Doing"
