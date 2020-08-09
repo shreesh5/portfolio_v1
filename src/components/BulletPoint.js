@@ -14,7 +14,7 @@ const BulletPoint = ({ title, text, icons }) => {
                     {title}
                 </Typography>
             </Box>
-            <Box border={1} style={{flexDirection: 'row', display: 'flex', marginLeft: 30}}>
+            <Box style={{flexDirection: 'row', display: 'flex', marginLeft: 30}}>
             { (icons) ?
                 (icons.map(icon => (
                     <Box style={{flexDirection: 'row', display: 'flex'}}>

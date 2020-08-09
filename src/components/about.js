@@ -122,31 +122,33 @@ const About = () => {
                         />
                     </Box>
                 </Grid>
-                <Grid item xs={12} align="center">
+                <Grid item xs={12} sm={12} md={12} lg={12} align="center">
                     <Box 
                         display="flex" 
-                        flexDirection={!isMobile ? "row" : "column"} 
+                        flexDirection={!isSmall ? "row" : "column"} 
                         justifyContent="space-between" 
                         width={!isMobile ? "55%" : "100%"}
-                        marginLeft={!isSmall ? 6 : 0} 
+                        minWidth={350}
+                        marginLeft={!isMedium ? 6 : 0}
+                        
                     >
                         <BottomBulletPoint
                             title="Toolbox"
                             points={tools_bulletpoints}
                             icon="toolbox"
-                            isMobile={isMobile}
+                            isMobile={isSmall}
                         />
                         <BottomBulletPoint
                             title="Learning"
                             points={learning_bulletpoints}
                             icon="book"
-                            isMobile={isMobile}
+                            isMobile={isSmall}
                         />
                         <BottomBulletPoint
                             title="Hacking On"
                             points={hacking_bulletpoints}
                             icon="webdev"
-                            isMobile={isMobile}
+                            isMobile={isSmall}
                         />
                     </Box>
                 </Grid>
