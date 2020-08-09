@@ -9,6 +9,7 @@ import {
 import Img from 'gatsby-image'
 import { graphql, useStaticQuery } from 'gatsby'
 import BulletPoint from './BulletPoint'
+import BottomBulletPoint from './BottomBulletPoint'
 
 const About = () => {
 
@@ -43,6 +44,41 @@ const About = () => {
         }
     ]
 
+    const tools_bulletpoints = [
+        {
+            "title": "Languages and Frameworks: ",
+            "text": "Python, JavaScript, HTML, CSS, SQL, ReactJS, React-Native, Django, Flask",
+        },
+        {
+            "title": "Databases: ",
+            "text": "MongoDB, Firebase, PostgreSQL",
+        },
+        {
+            "title": "Other Tools: ",
+            "text": "Git, Heroku, Windows, Unix/Linux",
+        },
+    ]
+
+    const learning_bulletpoints = [
+        {
+            "title": "Currently: ",
+            "text": "AWS Lambda, GraphQL",
+        },
+        {
+            "title": "On The Radar: ",
+            "text": "Search Engine Optimization",
+        }
+    ]
+
+    const hacking_bulletpoints = [
+        {
+            "text": "1. Earning my MSCS degree",
+        },
+        {
+            "text": "2. Contributing to the Mobile team at UTO, ASU",
+        },
+    ]
+
     return (
         <div className="about-section" id="about">
             <Typography variant="h3">About Me</Typography>
@@ -64,10 +100,10 @@ const About = () => {
                     </Paper>
                 </Grid>
                 <Grid item xs={12} md={6}  align="left">
-                    <Box style={{flexDirection: 'column', display: 'flex', minWidth: 400, maxWidth: 500, height: "100%"}} border={1}>
+                    <Box style={{flexDirection: 'column', display: 'flex', minWidth: 400, maxWidth: 500, height: "100%"}}>
                         <BulletPoint 
                             title="What I Aspire to Do"        
-                            text = "My goal as a developer is to build applications that make a difference and improve lives. I beleive that through code we can make the world a better place by building products that empower people and make life easier."
+                            text = "My goal as an software engineer is to build applications that make an impact and improve lives. I beleive that through code we can make the world a better place by building products that empower people and make life easier."
                         />
                         <BulletPoint 
                             title="What I'm Currently Doing"
@@ -80,18 +116,18 @@ const About = () => {
                     </Box>
                 </Grid>
                 <Grid item xs={12} align="center">
-                    <Box border={1} width="55%" display="flex" flexDirection="row" justifyContent="space-between" marginLeft={6}>
-                        <BulletPoint
+                    <Box width="55%" display="flex" flexDirection="row" justifyContent="space-between" marginLeft={6}>
+                        <BottomBulletPoint
                             title="Toolbox"
-                            text="Languages"
+                            points={tools_bulletpoints}
                         />
-                        <BulletPoint
-                            title="On the Radar"
-                            text="Languages"
+                        <BottomBulletPoint
+                            title="Learning"
+                            points={learning_bulletpoints}
                         />
-                        <BulletPoint
-                            title="Hacking on"
-                            text="Languages"
+                        <BottomBulletPoint
+                            title="Hacking On"
+                            points={hacking_bulletpoints}
                         />
                     </Box>
                 </Grid>
