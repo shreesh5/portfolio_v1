@@ -1,6 +1,6 @@
 .projects-section {
-    height: 100vh;
     background-color: gray;
     text-align: center;
     justify-content: center;
+    padding-top: 30px;
 }

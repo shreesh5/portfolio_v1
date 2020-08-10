@@ -1,0 +1,23 @@
+[
+    {
+      "name": "GiftoLexia",
+      "type": "full-stack",
+      "description": "GiftoLexia is a startup aimed towards helping dyslexic children, it is incubated in NSRCEL, IIM, Bangalore. The app provides a list of relevant resources which aide government teachers in teaching dyslexic students.",
+      "img": "GiftoLexia.png",
+      "url": "https://www.github.com/shreesh5/Gifto"
+    },
+    {
+      "name": "ASL Hand Gesture Classifier",
+      "type": "machine-learning",
+      "description": "Allows a user to POST JSON data of a sign language hand gesture video to a url and receive a JSON response containing the classification gestures of four different machine learning models. Built using: Python and Flask.",
+      "img": "ASL.png",
+      "url": "https://github.com/shreesh5/CSE535-Assignment2"
+    },  
+    {
+      "name": "Stress Down",
+      "type": "machine-learning",
+      "description": "Monitors the user's stress levels using data from a GSR sensor and provides recommendations based on location if the user's stress levels escalate beyond a threshold. Built using: Python and Flask.",
+      "img": "StressDetectionApp.png",
+      "url": "https://github.com/shreesh5/CSE535-Project"
+    }
+]
