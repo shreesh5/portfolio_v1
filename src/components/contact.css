@@ -1,5 +1,5 @@
 .contact-section {
-    background-color: #e0e0e0;
+    background-color: white;
     text-align: center;
     height: 300px;
     width: 100%;
@@ -13,3 +13,4 @@
     flex-direction: row;
     padding-top: 50px;
 }
+/*#e0e0e0;*/

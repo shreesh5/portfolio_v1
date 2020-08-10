@@ -16,7 +16,7 @@
     {
       "name": "Stress Down",
       "type": "machine-learning",
-      "description": "Monitors the user's stress levels using data from a GSR sensor and provides recommendations based on location if the user's stress levels escalate beyond a threshold. Built using: Python and Flask.",
+      "description": "Monitors the user's stress levels using data from a GSR sensor and provides recommendations based on location if the user's stress levels escalate beyond a threshold. Built using: Android Studio, Python and Flask.",
       "img": "StressDetectionApp.png",
       "url": "https://github.com/shreesh5/CSE535-Project"
     }
