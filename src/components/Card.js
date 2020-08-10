@@ -7,7 +7,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import Img from 'gatsby-image'
-import GitHubIcon from '@material-ui/icons/GitHub';
+import { GitHubIcon } from './Icons'
 import IconButton from '@material-ui/core/IconButton'
 
 const useStyles = makeStyles({
@@ -37,6 +37,11 @@ const useStyles = makeStyles({
         padding: 0,
         "&:last-child": {
             paddingBottom: 0
+        }
+    },
+    iconStyle: {
+        '& svg': {
+            fontSize: 33,
         }
     }
 });
@@ -70,8 +75,8 @@ export default function OutlinedCard({ title, description, fluid, url }) {
                 target="_blank"
                 rel="noopener noreferrer"
             >
-                <IconButton>
-                <GitHubIcon size="lg" />
+                <IconButton className={classes.iconStyle}>
+                    <GitHubIcon />
                 </IconButton>
             </a>
         </CardActions>
