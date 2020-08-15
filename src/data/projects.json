@@ -1,7 +1,7 @@
 [
     {
       "name": "GiftoLexia",
-      "type": "full-stack",
+      "type": "react-reactnative",
       "description": "GiftoLexia is a startup aimed towards helping dyslexic children, it is incubated in NSRCEL, IIM, Bangalore. The app provides a list of relevant resources which aide government teachers in teaching dyslexic students.",
       "img": "GiftoLexia.png",
       "url": "https://www.github.com/shreesh5/Gifto"
@@ -9,7 +9,7 @@
     {
       "name": "ASL Hand Gesture Classifier",
       "type": "machine-learning",
-      "description": "Allows a user to POST JSON data of a sign language hand gesture video to a url and receive a JSON response containing the classification gestures of four different machine learning models. Built using: Python and Flask.",
+      "description": "Allows a user to make a request to an API with the JSON data of a sign language hand gesture video to a url and receive a JSON response containing the classification gestures of four different machine learning models. Built using: Python and Flask.",
       "img": "ASL.png",
       "url": "https://github.com/shreesh5/CSE535-Assignment2"
     },  
@@ -19,5 +19,33 @@
       "description": "Monitors the user's stress levels using data from a GSR sensor and provides recommendations based on location if the user's stress levels escalate beyond a threshold. Built using: Android Studio, Python and Flask.",
       "img": "StressDetectionApp.png",
       "url": "https://github.com/shreesh5/CSE535-Project"
+    },
+    {
+      "name": "Jobs",
+      "type": "react-reactnative",
+      "description": "A job search application that allows users to search for jobs in a particular location and swipe to like or dislike job listings based on job title, location, and description in Tinder like fashion. Built using: React-Native.",
+      "img": "StressDetectionApp.png",
+      "url": "https://github.com/shreesh5/jobs"
+    },
+    {
+      "name": "Tracks",
+      "type": "react-reactnative",
+      "description": "A location tracking application that allows users to create and view records of their change in location over a period of time during a particular activity, for example a hike, bike ride or road trip. Built using: React-Native, MongoDB, Node and Express.",
+      "img": "StressDetectionApp.png",
+      "url": "https://github.com/shreesh5/tracks"
+    },
+    {
+      "name": "Blogs",
+      "type": "react-reactnative",
+      "description": "A blog creation application that allows users to create, read, edit and delete blogs on a local JSON server. Built using: React-Native, Node and Express.",
+      "img": "StressDetectionApp.png",
+      "url": "https://github.com/shreesh5/blog"
+    },
+    {
+      "name": "Expense Tracker",
+      "type": "react-reactnative",
+      "description": "An expense tracking application that allows users to monitor their daily expenses. Built using: React, MongoDB, Node and Express.",
+      "img": "StressDetectionApp.png",
+      "url": "https://github.com/shreesh5/expense-tracker-mern"
     }
 ]

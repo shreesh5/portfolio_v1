@@ -65,7 +65,7 @@ const Projects = () => {
             }
             }
         }
-        `)
+    `)
     const { edges: projectImgData } = data.ProjectImgs;
 
     return (
@@ -85,7 +85,7 @@ const Projects = () => {
                     align="center"
                 >
                 <MenuItem value="all">All Projects</MenuItem>
-                <MenuItem value="full-stack">Full Stack</MenuItem>
+                <MenuItem value="react-reactnative">React/React-Native</MenuItem>
                 <MenuItem value="machine-learning">Machine Learning</MenuItem>
                 </Select>
             </FormControl>
