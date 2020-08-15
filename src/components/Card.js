@@ -11,23 +11,26 @@ import { GitHubIcon } from './Icons'
 import IconButton from '@material-ui/core/IconButton'
 
 const useStyles = makeStyles({
-  root: {
-      width: 350,
-      height: 420,
+    root: {
+        width: 350,
+        height: 420,
         marginLeft: 30,
         marginBottom: 40,
         borderColor: 'black',
         borderWidth: 2,
     },
-        title: {
+    title: {
         fontSize: 14,
     },
-        pos: {
+    pos: {
         marginBottom: 12,
     },
     media: {
         width: "100%",
         height: "100%",
+        // "&:hover" : {
+        //     transform: scale(1.10)
+        // }
     },
     imgContainer: {
         width: "100%",
@@ -43,7 +46,14 @@ const useStyles = makeStyles({
         '& svg': {
             fontSize: 33,
         }
-    }
+    },
+    actionAreaContainer: {
+        //focusHighlight : {},
+        "&:hover $focusHighlight": {
+            opacity: 0 
+        }
+    },
+    focusHighlight: {}
 });
 
 export default function OutlinedCard({ title, description, fluid, url }) {
@@ -52,7 +62,7 @@ export default function OutlinedCard({ title, description, fluid, url }) {
 
     return (
         <Card className={classes.root} variant="outlined">
-        <CardActionArea>
+        <CardActionArea classes={{ root: classes.actionAreaContainer, focusHighlight: classes.focusHighlight }} >
             <CardMedia className={classes.imgContainer} style={{ display: 'flex', justifyContent: 'center', borderBottom: '2px solid black'}}>
                 <Img 
                     alt="Screenshot of Project"
