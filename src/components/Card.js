@@ -28,13 +28,13 @@ const useStyles = makeStyles({
     media: {
         width: "100%",
         height: "100%",
-        // "&:hover" : {
-        //     transform: scale(1.10)
-        // }
     },
     imgContainer: {
         width: "100%",
         height: 210,
+        // "&:hover $media" : {
+        //     transform: `scale(0.97)`
+        // }
     },
     cardcontent: {
         padding: 0,
