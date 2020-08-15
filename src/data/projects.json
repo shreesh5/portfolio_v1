@@ -9,14 +9,14 @@
     {
       "name": "ASL Hand Gesture Classifier",
       "type": "machine-learning",
-      "description": "Allows a user to make a request to an API with the JSON data of a sign language hand gesture video to a url and receive a JSON response containing the classification gestures of four different machine learning models. Built using: Python and Flask.",
+      "description": "Allows a user to make a request to an API with the JSON data of a sign language hand gesture video and receive a JSON response containing the classification gestures of four different machine learning models. Built using: Python and Flask.",
       "img": "ASL.png",
       "url": "https://github.com/shreesh5/CSE535-Assignment2"
     },  
     {
       "name": "Stress Down",
       "type": "web-mobile-dev",
-      "description": "Monitors the user's stress levels using data from a GSR sensor and provides recommendations based on location if the user's stress levels escalate beyond a threshold. Built using: Android Studio, Python and Flask.",
+      "description": "Allows a user to monitors their stress levels using data from a GSR sensor and provides recommendations based on location if the user's stress levels escalate beyond a threshold. Built using: Android Studio, Python and Flask.",
       "img": "StressDetectionApp.png",
       "url": "https://github.com/shreesh5/CSE535-Project"
     },
@@ -68,5 +68,12 @@
       "description": "A multi-object detection and tracking tool that allows users to detect vehicles using YOLO and track a fixed number of vehicles using the MEEM tracker. Built using: YOLO, MEEM, Matlab and Python.",
       "img": "MEEM.png",
       "url": "https://github.com/shreesh5/meem"
+    },
+    {
+      "name": "NBA Player Network Visualization and Analysis",
+      "type": "machine-learning",
+      "description": "This project visualizes a network of 10 prominent NBA players and 50 of their followers and calculates degree distribution, eigenvector centrality and betweenness centrality for the same. Built using: Python, NetworkX and NumPy.",
+      "img": "SocialNetwork.png",
+      "url": "https://github.com/shreesh5/CSE472-Project1"
     }
 ]
