@@ -75,5 +75,12 @@
       "description": "This project visualizes a network of 10 prominent NBA players and 50 of their followers each. It calculates degree distribution, eigenvector centrality and betweenness centrality for the same. Built using: Python, NetworkX and NumPy.",
       "img": "SocialNetwork.png",
       "url": "https://github.com/shreesh5/CSE472-Project1"
+    },
+    {
+      "name": "Directional Stock Prediction using Viral Tweets and News",
+      "type": "machine-learning",
+      "description": "This project focuses on creating various machine learning models to predict whether AAPL and AMZN stocks will rise or fall in a given timeframe based on the data present in viral tweets and news. Built using: Python.",
+      "img": "StockPrediction.png",
+      "url": "https://github.com/shreesh5/meem"
     }
 ]
