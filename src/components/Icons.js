@@ -1,7 +1,15 @@
 import React from 'react'
 import { SvgIcon } from '@material-ui/core'
 
-export const ToolBoxIcon = () => {
+const OutlinedArrowIcon = () => {
+    return (
+        <SvgIcon fontSize="small" viewBox="0 0 512 512" style={{marginTop: 5}}>
+            <path d="m511.824219 255.863281-233.335938-255.863281v153.265625h-27.105469c-67.144531 0-130.273437 26.148437-177.753906 73.628906-47.480468 47.480469-73.628906 110.609375-73.628906 177.757813v107.347656l44.78125-49.066406c59.902344-65.628906 144.933594-103.59375 233.707031-104.457032v153.253907zm-481.820313 179.003907v-30.214844c0-59.132813 23.027344-114.730469 64.839844-156.542969s97.40625-64.839844 156.539062-64.839844h57.105469v-105.84375l162.734375 178.4375-162.734375 178.441407v-105.84375h-26.917969c-94.703124 0-185.773437 38.652343-251.566406 106.40625zm0 0" />
+        </SvgIcon>
+    )
+}
+
+const ToolBoxIcon = () => {
     return (
         <SvgIcon fontSize="medium" viewBox="0 0 512 512" style={{marginTop: 3, marginRight: 3}}>
             <g>
@@ -47,7 +55,7 @@ export const ToolBoxIcon = () => {
     )
 }
 
-export const BookIcon = () => {
+const BookIcon = () => {
     return (
         <SvgIcon fontSize="medium" viewBox="0 0 512 512" style={{marginTop: 4, marginRight: 3}}>
             <g>
@@ -73,7 +81,7 @@ export const BookIcon = () => {
     )
 }
 
-export const WebDevIcon = () => {
+const WebDevIcon = () => {
     return (
         <SvgIcon fontSize="medium" viewBox="0 0 512 512" style={{marginTop: 3, marginRight: 3}}>
             <path d="m467 1h-422c-24.813 0-45 20.187-45 45v420c0 24.813 20.187 45 45 45h422c24.813 0 45-20.187 45-45v-420c0-24.813-20.187-45-45-45zm-422 30h422c8.271 0 15 6.729 15 15v75h-452v-75c0-8.271 6.729-15 15-15zm422 450h-422c-8.271 0-15-6.729-15-15v-315h452v315c0 8.271-6.729 15-15 15z"/>
@@ -89,7 +97,7 @@ export const WebDevIcon = () => {
     )
 }
 
-export const ArrowIcon = () => {
+const ArrowIcon = () => {
     return (
         <SvgIcon fontSize="inherit" viewBox="0 0 512 512" style={{marginRight: 2}}>
             <path d="M506.134,241.843c-0.006-0.006-0.011-0.013-0.018-0.019l-104.504-104c-7.829-7.791-20.492-7.762-28.285,0.068
@@ -100,9 +108,9 @@ export const ArrowIcon = () => {
     )
 }
 
-export const GitHubIcon = ({size}) => {
+export const GitHubIcon = () => {
     return (
-        <SvgIcon fontSize={size} viewBox="0 0 512 512">
+        <SvgIcon fontSize="large" viewBox="0 0 512 512" style={{ color: 'black'}}>
             <path d="m256 0c-140.699219 0-256 116.300781-256 257 0 139.882812 114.25 255 256 255 141.574219 0 
                 256-114.945312 256-255 0-140.699219-115.300781-257-256-257zm45 477.5c-14.398438 3-29.699219 4.5-45 
                 4.5s-30.601562-1.5-45-4.5v-70.199219c0-16.800781 4.5-22.800781 10.5-30.902343 3.054688-3.492188 4.898438-6.625 
@@ -127,9 +135,9 @@ export const GitHubIcon = ({size}) => {
     )
 }
 
-export const LinkedInIcon = () => {
+const LinkedInIcon = () => {
     return (
-        <SvgIcon fontSize="large" viewBox="0 0 512 512">
+        <SvgIcon fontSize="large" viewBox="0 0 512 512" style={{ color: 'black'}}>
             <path d="m452 512h-392c-33.085938 0-60-26.914062-60-60v-392c0-33.085938 26.914062-60 60-60h392c33.085938
                 0 60 26.914062 60 60v392c0 33.085938-26.914062 60-60 60zm-392-472c-11.027344 0-20 8.972656-20 20v392c0 
                 11.027344 8.972656 20 20 20h392c11.027344 0 20-8.972656 20-20v-392c0-11.027344-8.972656-20-20-20zm353.667969 
@@ -143,9 +151,9 @@ export const LinkedInIcon = () => {
     )
 }
 
-export const EmailIcon = () => {
+const EmailIcon = () => {
     return (
-        <SvgIcon fontSize="large" viewBox="0 0 512 512">
+        <SvgIcon fontSize="large" viewBox="0 0 512 512" style={{ color: 'black'}}>
             <path d="M467,61H45C20.218,61,0,81.196,0,106v300c0,24.72,20.128,45,45,45h422c24.72,0,45-20.128,45-45V106
                 C512,81.28,491.872,61,467,61z M460.786,91L256.954,294.833L51.359,91H460.786z M30,399.788V112.069l144.479,143.24L30,399.788z
                 M51.213,421l144.57-144.57l50.657,50.222c5.864,5.814,15.327,5.795,21.167-0.046L317,277.213L460.787,421H51.213z M482,399.787
@@ -154,3 +162,23 @@ export const EmailIcon = () => {
         </SvgIcon>
     )
 }
+
+export const iconMap = ( icon ) => {
+    
+    const iconMapping = {
+        "outlinedarrow": OutlinedArrowIcon(),
+        "toolbox": ToolBoxIcon(),
+        "book": BookIcon(),
+        "webdev": WebDevIcon(),
+        "arrow": ArrowIcon(),
+        "github": GitHubIcon(),
+        "linkedin": LinkedInIcon(),
+        "email": EmailIcon()
+    }
+
+    return (
+        iconMapping[icon]        
+    )
+}
+
+export default iconMap

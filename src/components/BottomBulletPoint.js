@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box, Typography, makeStyles } from '@material-ui/core'
-import { ToolBoxIcon, BookIcon, WebDevIcon, ArrowIcon } from './Icons'
+import iconMap from './Icons'
 
 const useStyles = makeStyles((theme) => ({
     defaultStyle: {
@@ -16,17 +16,11 @@ const BottomBulletPoint = ({ isMobile, icon, title, points }) => {
 
     const classes = useStyles(); 
 
-    const iconMap = {
-        "toolbox": <ToolBoxIcon />,
-        "book": <BookIcon />,
-        "webdev": <WebDevIcon />
-    }
-
     return (
         <Box border={1} className={!isMobile ? classes.defaultStyle : classes.mobileStyle} style={{ marginBottom: 15}}>
             <Box style={{flexDirection: 'row', display: 'flex'}}>
                 {
-                    iconMap[icon]
+                    iconMap(icon)
                 }
                 <Typography variant="h5" style={{ marginTop: 3}}>
                     {title}
@@ -36,7 +30,7 @@ const BottomBulletPoint = ({ isMobile, icon, title, points }) => {
             {  
                 points.map(point => (
                     <Box display="flex" flexDirection="row" align="left" width="100%">
-                        <ArrowIcon />
+                        { iconMap("arrow") }
                         <Typography variant="body2" width="100%">
                             <b>{point.title ? point.title : null}</b>
                             {point.text}
