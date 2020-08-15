@@ -42,31 +42,31 @@
       "url": "https://github.com/shreesh5/expense-tracker-mern"
     },
     {
-      "name": "Multi-Object Detection and Tracking Tool",
-      "type": "machine-learning",
-      "description": "A multi-object detection and tracking tool that allows users to detect vehicles using YOLO and track a fixed number of vehicles using the MEEM tracker. Built using: YOLO, MEEM, Matlab and Python.",
-      "img": "MEEM.png",
-      "url": "https://github.com/shreesh5/meem"
-    },
-    {
       "name": "Jobs",
       "type": "web-mobile-dev",
       "description": "A job search application that allows users to search for jobs in a particular location and swipe to like or dislike job listings based on job title, location, and description in Tinder like fashion. Built using: React-Native.",
-      "img": "StressDetectionApp.png",
+      "img": "ReactNativeLogo.png",
       "url": "https://github.com/shreesh5/jobs"
     },
     {
       "name": "Tracks",
       "type": "web-mobile-dev",
       "description": "A location tracking application that allows users to create and view records of their change in location over a period of time during a particular activity, for example a hike, bike ride or road trip. Built using: React-Native, MongoDB, Node and Express.",
-      "img": "StressDetectionApp.png",
+      "img": "ReactNativeLogo.png",
       "url": "https://github.com/shreesh5/tracks"
     },
     {
       "name": "Blogs",
       "type": "web-mobile-dev",
       "description": "A blog creation application that allows users to create, read, edit and delete blogs on a local JSON server. Built using: React-Native, Node and Express.",
-      "img": "StressDetectionApp.png",
+      "img": "ReactNativeLogo.png",
       "url": "https://github.com/shreesh5/blog"
+    },
+    {
+      "name": "Multi-Object Detection and Tracking Tool",
+      "type": "machine-learning",
+      "description": "A multi-object detection and tracking tool that allows users to detect vehicles using YOLO and track a fixed number of vehicles using the MEEM tracker. Built using: YOLO, MEEM, Matlab and Python.",
+      "img": "MEEM.png",
+      "url": "https://github.com/shreesh5/meem"
     }
 ]
