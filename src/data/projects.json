@@ -42,6 +42,27 @@
       "url": "https://github.com/shreesh5/expense-tracker-mern"
     },
     {
+      "name": "Multi-Object Detection and Tracking Tool",
+      "type": "machine-learning",
+      "description": "Allows users to specify a sequence of frames in which vehicles will be detected and a specified number of vehicles will be tracked (this number is maintained throughout the sequence). Built using: YOLO, MEEM, Matlab and Python.",
+      "img": "MEEM.png",
+      "url": "https://github.com/shreesh5/meem"
+    },
+    {
+      "name": "NBA Player Network Visualization and Analysis",
+      "type": "machine-learning",
+      "description": "This project visualizes a network of 10 prominent NBA players and 50 of their followers each. It calculates degree distribution, eigenvector centrality and betweenness centrality for the same. Built using: Python, NetworkX and NumPy.",
+      "img": "SocialNetwork.png",
+      "url": "https://github.com/shreesh5/CSE472-Project1"
+    },
+    {
+      "name": "Directional Stock Prediction using Viral Tweets and News",
+      "type": "machine-learning",
+      "description": "This project focuses on creating various machine learning models to predict whether AAPL and AMZN stocks will rise or fall in a given timeframe based on the data present in viral tweets and news. Built using: Python.",
+      "img": "StockPrediction.png",
+      "url": "https://github.com/shreesh5/SWM-stock-prediction"
+    },
+    {
       "name": "Jobs",
       "type": "web-mobile-dev",
       "description": "A job search application that allows users to search for jobs in a particular location and swipe to like or dislike job listings based on job title, location, and description in Tinder like fashion. Built using: React-Native.",
@@ -61,26 +82,5 @@
       "description": "A blog creation application that allows users to create, read, edit and delete blogs on a local JSON server. Built using: React-Native, Node and Express.",
       "img": "ReactNativeLogo.png",
       "url": "https://github.com/shreesh5/blog"
-    },
-    {
-      "name": "Multi-Object Detection and Tracking Tool",
-      "type": "machine-learning",
-      "description": "Allows users to specify a sequence of frames in which vehicles will be detected and a specified number of vehicles will be tracked (this number is maintained throughout the sequence). Built using: YOLO, MEEM, Matlab and Python.",
-      "img": "MEEM.png",
-      "url": "https://github.com/shreesh5/meem"
-    },
-    {
-      "name": "NBA Player Network Visualization and Analysis",
-      "type": "machine-learning",
-      "description": "This project visualizes a network of 10 prominent NBA players and 50 of their followers each. It calculates degree distribution, eigenvector centrality and betweenness centrality for the same. Built using: Python, NetworkX and NumPy.",
-      "img": "SocialNetwork.png",
-      "url": "https://github.com/shreesh5/CSE472-Project1"
-    },
-    {
-      "name": "Directional Stock Prediction using Viral Tweets and News",
-      "type": "machine-learning",
-      "description": "This project focuses on creating various machine learning models to predict whether AAPL and AMZN stocks will rise or fall in a given timeframe based on the data present in viral tweets and news. Built using: Python.",
-      "img": "StockPrediction.png",
-      "url": "https://github.com/shreesh5/meem"
     }
 ]
