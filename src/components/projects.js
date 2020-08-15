@@ -85,7 +85,7 @@ const Projects = () => {
                     align="center"
                 >
                 <MenuItem value="all">All Projects</MenuItem>
-                <MenuItem value="react-reactnative">React/React-Native</MenuItem>
+                <MenuItem value="web-mobile-dev">Web/Mobile Development</MenuItem>
                 <MenuItem value="machine-learning">Machine Learning</MenuItem>
                 </Select>
             </FormControl>
