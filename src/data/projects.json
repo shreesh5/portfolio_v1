@@ -65,7 +65,7 @@
     {
       "name": "Multi-Object Detection and Tracking Tool",
       "type": "machine-learning",
-      "description": "Allows users to simulataneously detect and track vehicles in a specified sequence of frames. It allows the user to specify the number of vehicles to be tracked (this number is maintained throughout the sequence). Built using: YOLO, MEEM, Matlab and Python.",
+      "description": "Allows users to specify a sequence of frames in which vehicles will be detected and a specified number of vehicles will be tracked (this number is maintained throughout the sequence). Built using: YOLO, MEEM, Matlab and Python.",
       "img": "MEEM.png",
       "url": "https://github.com/shreesh5/meem"
     },
