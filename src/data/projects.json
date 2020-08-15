@@ -65,14 +65,14 @@
     {
       "name": "Multi-Object Detection and Tracking Tool",
       "type": "machine-learning",
-      "description": "A multi-object detection and tracking tool that allows users to detect vehicles using YOLO and track a fixed number of vehicles using the MEEM tracker. Built using: YOLO, MEEM, Matlab and Python.",
+      "description": "Allows users to simulataneously detect and track vehicles in a specified sequence of frames. It allows the user to specify the number of vehicles to be tracked (this number is maintained throughout the sequence). Built using: YOLO, MEEM, Matlab and Python.",
       "img": "MEEM.png",
       "url": "https://github.com/shreesh5/meem"
     },
     {
       "name": "NBA Player Network Visualization and Analysis",
       "type": "machine-learning",
-      "description": "This project visualizes a network of 10 prominent NBA players and 50 of their followers and calculates degree distribution, eigenvector centrality and betweenness centrality for the same. Built using: Python, NetworkX and NumPy.",
+      "description": "This project visualizes a network of 10 prominent NBA players and 50 of their followers each. It calculates degree distribution, eigenvector centrality and betweenness centrality for the same. Built using: Python, NetworkX and NumPy.",
       "img": "SocialNetwork.png",
       "url": "https://github.com/shreesh5/CSE472-Project1"
     }
