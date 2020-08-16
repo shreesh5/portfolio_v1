@@ -91,7 +91,14 @@ export default function MenuAppBar() {
                             <ListItem><NavBarLink to="projects" name="Projects"/></ListItem>
                             <ListItem><NavBarLink to="contact" name="Contact"/></ListItem>
                             <ListItem>
-                              <Button variant="contained" color="secondary" size="medium" className={classes.buttonStyle}>
+                              <Button 
+                                variant="contained" 
+                                color="secondary" 
+                                size="medium" 
+                                className={classes.buttonStyle}
+                                href="https://drive.google.com/file/d/1-RPAwiFsqEOplJ-9ruOAXJ_M82FwszQP/view?usp=sharing"
+                                target="_blank"
+                              >
                                 Resume
                               </Button>
                             </ListItem>
@@ -103,7 +110,14 @@ export default function MenuAppBar() {
                         <NavBarLink to="about" name="About Me"/>
                         <NavBarLink to="projects" name="Projects"/>
                         <NavBarLink to="contact" name="Contact"/>
-                        <Button variant="contained" color="secondary" size="small" className={classes.buttonStyle}>
+                        <Button 
+                          variant="contained" 
+                          color="secondary" 
+                          size="small" 
+                          className={classes.buttonStyle}
+                          href="https://drive.google.com/file/d/1-RPAwiFsqEOplJ-9ruOAXJ_M82FwszQP/view?usp=sharing"
+                          target="_blank"  
+                        >
                           <Typography>Resume</Typography>
                         </Button>
                     </Box>
