@@ -7,8 +7,9 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import Img from 'gatsby-image'
-import { GitHubIcon } from './Icons'
+import iconMap from './Icons'
 import IconButton from '@material-ui/core/IconButton'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 const useStyles = makeStyles({
     root: {
@@ -79,15 +80,15 @@ export default function OutlinedCard({ title, description, fluid, url }) {
             </CardContent>
         </CardActionArea>
         <CardActions disableSpacing style={{ textAlign: 'left', height: 50, width: "100%"}}>
-            <a
+            <OutboundLink
                 href={url}
                 target="_blank"
                 rel="noopener noreferrer"
             >
                 <IconButton className={classes.iconStyle}>
-                    <GitHubIcon />
+                    {iconMap("github")}
                 </IconButton>
-            </a>
+            </OutboundLink>
         </CardActions>
         </Card>
     );

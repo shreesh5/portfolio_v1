@@ -1,6 +1,7 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles';
 import { Typography, Box } from '@material-ui/core';
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 import contactList from '../data/contact.json'
 import iconMap from './Icons'
 
@@ -33,14 +34,14 @@ const Contact = () => {
                 {
                     contactList.map(contact => {
                         return (
-                            <a
+                            <OutboundLink
                                 href={contact.url}
                                 target="_blank"
                                 title={`External link to my ${contact.name} account`}
                                 rel="noopener noreferrer"
                             >
                                 {iconMap(contact.icon)}
-                            </a>
+                            </OutboundLink>
                         )
                     })
                 }
