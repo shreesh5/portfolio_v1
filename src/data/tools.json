@@ -1,0 +1,14 @@
+[
+    {
+        "title": "Languages and Frameworks: ",
+        "text": "Python, JavaScript, HTML, CSS, SQL, ReactJS, React-Native, Django, Flask"
+    },
+    {
+        "title": "Databases: ",
+        "text": "MongoDB, Firebase, PostgreSQL"
+    },
+    {
+        "title": "Other Tools: ",
+        "text": "Git, Heroku, Windows, Unix/Linux"
+    }
+]
