@@ -8,7 +8,7 @@ const useStyles = makeStyles({
     contactSection: {
         backgroundColor: 'white',
         textAlign: 'center',
-        height: "300px",
+        height: "400px",
         width: "100%",
         paddingTop: "30px",
     },
@@ -16,7 +16,7 @@ const useStyles = makeStyles({
         justifyContent: 'space-evenly',
         display: 'flex',
         flexDirection: 'row',
-        paddingTop: '50px'
+        paddingTop: '100px'
     }
 });
 

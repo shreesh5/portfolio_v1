@@ -1,27 +1,40 @@
 import React from 'react'
 import { Link } from 'react-scroll'
-import Typography from '@material-ui/core/Typography';
+import { Typography, makeStyles } from '@material-ui/core';
 
+const useStyles = makeStyles({
+  link: {
+    "&:hover": {
+      textDecoration: 'underline' 
+    }
+  },
+  linkactive: {
+    textDecoration: 'underline'
+  }
+})
 
 const NavBarLink = ({ name, to }) => {
-    return (
-            <Link 
-              className="link"
-              activeClass="linkactive"
-              to={to}
-              spy={true}
-              smooth={true}
-              offset={-60}
-              duration={500}
-              style={{
-                  margin: 7
-              }}
-              >
-                <Typography>
-                    {name}
-                </Typography>
-              </Link>
-    )
+  
+  const classes = useStyles()
+  
+  return (
+    <Link 
+      className={classes.link}
+      //activeClass={classes.linkactive}
+      to={to}
+      spy={true}
+      smooth={true}
+      offset={-60}
+      duration={500}
+      style={{
+        margin: 7
+      }}
+    >
+      <Typography>
+        {name}
+      </Typography>
+    </Link>
+  )
 }
 
 export default NavBarLink

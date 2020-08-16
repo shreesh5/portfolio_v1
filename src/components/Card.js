@@ -32,9 +32,9 @@ const useStyles = makeStyles({
     imgContainer: {
         width: "100%",
         height: 210,
-        // "&:hover $media" : {
-        //     transform: `scale(0.97)`
-        // }
+        "&:hover $media" : {
+            transform: `scale(0.97)`
+        }
     },
     cardcontent: {
         padding: 0,
@@ -48,7 +48,6 @@ const useStyles = makeStyles({
         }
     },
     actionAreaContainer: {
-        //focusHighlight : {},
         "&:hover $focusHighlight": {
             opacity: 0 
         }

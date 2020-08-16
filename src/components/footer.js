@@ -9,7 +9,7 @@ const useStyles = makeStyles({
         height: "120px",
         width: "100%",
         position: 'absolute',
-        paddingTop: "50px",
+        paddingTop: "30px",
         backgroundColor: '#b71c1c',
         color: 'white'
     },
@@ -21,11 +21,12 @@ const Footer = () => {
 
     return (
         <Box className={classes.footerSection} id="footer">
-            <div>
-                <Typography>
-                    Coded by Shreesh
-                </Typography>
-            </div>
+            <Typography>
+                Inspired by many
+            </Typography>
+            <Typography>
+                Coded by Shreesh
+            </Typography>
         </Box>
     )
 }

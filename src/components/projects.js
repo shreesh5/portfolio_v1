@@ -17,7 +17,8 @@ const useStyles = makeStyles({
         backgroundColor: '#FFEBEE',
         textAlign: 'center',
         justifyContent: 'center',
-        paddingTop: "30px"
+        paddingTop: "30px",
+        paddingBottom: "30px"
     },
     gridContainer: {
         width: "100%",
@@ -74,8 +75,7 @@ const Projects = () => {
     const { edges: projectImgData } = data.ProjectImgs;
 
     return (
-        <Box className={classes.root}>
-        <div className={classes.projectSection} id="projects">
+        <Box className={classes.projectSection} id="projects">
             <Typography variant="h3">
                 Projects
             </Typography>
@@ -116,7 +116,6 @@ const Projects = () => {
                 }
             </Grid>
             </Container>
-        </div>
         </Box>
     )
 }
