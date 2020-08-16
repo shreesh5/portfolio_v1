@@ -57,7 +57,10 @@ export default function MenuAppBar() {
     setAnchorEl(null);
   };
 
-  const trigger = useScrollTrigger({ threshold: 60});
+  const trigger = useScrollTrigger({ 
+    threshold: 100, 
+    disableHysteresis: true 
+  });
 
   return (
     <div className={classes.root}>

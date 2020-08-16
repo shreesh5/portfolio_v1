@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Typography, SvgIcon } from '@material-ui/core'
+import { Box, Typography } from '@material-ui/core'
 import iconMap from './Icons'
 
 const BulletPoint = ({ title, text, icons }) => {
