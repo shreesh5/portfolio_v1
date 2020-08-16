@@ -11,12 +11,11 @@ import {
     List,
     Box,
     Button,
-    Drawer
+    Drawer,
+    useScrollTrigger
 } from '@material-ui/core'
-import MenuIcon from '@material-ui/icons/Menu';
 import NavBarLink from './navbarlink';
-import useScrollTrigger from "@material-ui/core/useScrollTrigger";
-
+import iconMap from './Icons'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -40,6 +39,9 @@ const useStyles = makeStyles((theme) => ({
     marginTop: 70
   },
   offset: theme.mixins.toolbar,
+  buttonStyle: {
+    textTransform: 'none',
+  }
 }));
 
 export default function MenuAppBar() {
@@ -58,7 +60,7 @@ export default function MenuAppBar() {
   };
 
   const trigger = useScrollTrigger({ 
-    threshold: 100, 
+    threshold: 150, 
     disableHysteresis: true 
   });
 
@@ -67,7 +69,7 @@ export default function MenuAppBar() {
         <AppBar position="fixed" style={ !trigger ? { background: 'transparent', boxShadow: 'none' } : {} } color="primary">
             <Toolbar>
                 <Typography variant="h6" className={classes.title}>
-                    SHREESH NAYAK
+                    Shreesh Nayak
                 </Typography>
             <div>
                 { isMobile ? 
@@ -76,7 +78,7 @@ export default function MenuAppBar() {
                             onClick={handleMenu}
                             color="inherit"
                         >
-                            <MenuIcon />
+                            {iconMap("menu")}
                         </IconButton>
                         <Drawer
                             anchor="right"
@@ -85,23 +87,25 @@ export default function MenuAppBar() {
                             variant="temporary"
                         >
                           <List className={classes.list}>
-                            <ListItem><NavBarLink to="about" name="ABOUT"/></ListItem>
-                            <ListItem><NavBarLink to="projects" name="PROJECTS"/></ListItem>
-                            <ListItem><NavBarLink to="contact" name="CONTACT"/></ListItem>
-                            <ListItem><Button variant="contained" color="secondary">
-                              Resume
-                            </Button></ListItem>
+                            <ListItem><NavBarLink to="about" name="About Me"/></ListItem>
+                            <ListItem><NavBarLink to="projects" name="Projects"/></ListItem>
+                            <ListItem><NavBarLink to="contact" name="Contact"/></ListItem>
+                            <ListItem>
+                              <Button variant="contained" color="secondary" size="medium" className={classes.buttonStyle}>
+                                Resume
+                              </Button>
+                            </ListItem>
                           </List>
                         </Drawer>
                     </> 
                     :
                     <Box className={classes.headerOptions}>
-                        <NavBarLink to="about" name="ABOUT"/>
-                        <NavBarLink to="projects" name="PROJECTS"/>
-                        <NavBarLink to="contact" name="CONTACT"/>
-                        {/* <Button variant="contained" color="secondary">
+                        <NavBarLink to="about" name="About Me"/>
+                        <NavBarLink to="projects" name="Projects"/>
+                        <NavBarLink to="contact" name="Contact"/>
+                        <Button variant="contained" color="secondary" size="small" className={classes.buttonStyle}>
                           <Typography>Resume</Typography>
-                        </Button> */}
+                        </Button>
                     </Box>
                 }
             </div>

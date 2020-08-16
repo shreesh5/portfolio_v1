@@ -14,7 +14,7 @@ const NavBarLink = ({ name, to }) => {
               offset={-60}
               duration={500}
               style={{
-                  margin: 10
+                  margin: 7
               }}
               >
                 <Typography>

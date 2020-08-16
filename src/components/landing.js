@@ -33,7 +33,7 @@ const Landing = () => {
             />
             <div className="center">
                 <Typography variant="h1" className="name">
-                    HI, I'M SHREESH
+                    Hi, I'm Shreesh
                 </Typography>
                 <Typography variant="subtitle1" className="greetings">
                     Software Engineer | Mobile Developer
