@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import './projects.css'
 import { Typography } from '@material-ui/core'
 import Card from './Card'
 import { Grid } from '@material-ui/core'
@@ -14,6 +13,12 @@ import Box from "@material-ui/core/Box";
 import Container from '@material-ui/core/Container';
 
 const useStyles = makeStyles({
+    projectSection: {
+        backgroundColor: '#FFEBEE',
+        textAlign: 'center',
+        justifyContent: 'center',
+        paddingTop: "30px"
+    },
     gridContainer: {
         width: "100%",
         display: "flex",
@@ -70,7 +75,7 @@ const Projects = () => {
 
     return (
         <Box className={classes.root}>
-        <div className="projects-section" id="projects">
+        <div className={classes.projectSection} id="projects">
             <Typography variant="h3">
                 Projects
             </Typography>
