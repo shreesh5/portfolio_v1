@@ -1,17 +1,35 @@
 import React from 'react'
-import { Typography } from '@material-ui/core';
-import './contact.css'
+import { makeStyles } from '@material-ui/core/styles';
+import { Typography, Box } from '@material-ui/core';
 import contactList from '../data/contact.json'
 import iconMap from './Icons'
 
+const useStyles = makeStyles({
+    contactSection: {
+        backgroundColor: 'white',
+        textAlign: 'center',
+        height: "300px",
+        width: "100%",
+        paddingTop: "30px",
+    },
+    iconBox: {
+        justifyContent: 'space-evenly',
+        display: 'flex',
+        flexDirection: 'row',
+        paddingTop: '50px'
+    }
+});
+
 const Contact = () => {
 
+    const classes = useStyles()
+
     return (
-        <div className="contact-section" id="contact">
+        <Box className={classes.contactSection} id="contact">
             <Typography variant="h3">
                 Contact
             </Typography>
-            <div className="icon-box">
+            <Box className={classes.iconBox}>
                 {
                     contactList.map(contact => {
                         return (
@@ -26,8 +44,8 @@ const Contact = () => {
                         )
                     })
                 }
-            </div>
-        </div>
+            </Box>
+        </Box>
     )
 }
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles';
-import Typography from '@material-ui/core/Typography';
+import { Typography, Box } from '@material-ui/core';
 
 const useStyles = makeStyles({
     footerSection: {
@@ -20,13 +20,13 @@ const Footer = () => {
     const classes = useStyles()
 
     return (
-        <div className={classes.footerSection} id="footer">
+        <Box className={classes.footerSection} id="footer">
             <div>
                 <Typography>
                     Coded by Shreesh
                 </Typography>
             </div>
-        </div>
+        </Box>
     )
 }
 
