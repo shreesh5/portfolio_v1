@@ -18,7 +18,6 @@ const Landing = () => {
     }
     `)
     
-    console.log(data)
     return (
         <div className="landing-section" id="main">
             <Img 
@@ -37,7 +36,7 @@ const Landing = () => {
                     HI, I'M SHREESH
                 </Typography>
                 <Typography variant="subtitle1" className="greetings">
-                    Software Developer
+                    Software Engineer | Mobile Developer
                 </Typography>
             </div>
         </div>

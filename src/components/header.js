@@ -15,6 +15,7 @@ import {
 } from '@material-ui/core'
 import MenuIcon from '@material-ui/icons/Menu';
 import NavBarLink from './navbarlink';
+import useScrollTrigger from "@material-ui/core/useScrollTrigger";
 
 
 const useStyles = makeStyles((theme) => ({
@@ -56,9 +57,11 @@ export default function MenuAppBar() {
     setAnchorEl(null);
   };
 
+  const trigger = useScrollTrigger({ threshold: 60});
+
   return (
     <div className={classes.root}>
-        <AppBar position="fixed" color="primary">
+        <AppBar position="fixed" style={ !trigger ? { background: 'transparent', boxShadow: 'none' } : {} } color="primary">
             <Toolbar>
                 <Typography variant="h6" className={classes.title}>
                     SHREESH NAYAK
@@ -93,9 +96,9 @@ export default function MenuAppBar() {
                         <NavBarLink to="about" name="ABOUT"/>
                         <NavBarLink to="projects" name="PROJECTS"/>
                         <NavBarLink to="contact" name="CONTACT"/>
-                        <Button variant="contained" color="secondary">
+                        {/* <Button variant="contained" color="secondary">
                           <Typography>Resume</Typography>
-                        </Button>
+                        </Button> */}
                     </Box>
                 }
             </div>
