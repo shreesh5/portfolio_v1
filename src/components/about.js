@@ -1,12 +1,12 @@
 import React from 'react'
-import './about.css'
 import { 
     Typography,
     Grid,
     Paper,
     Box,
     useTheme,
-    useMediaQuery
+    useMediaQuery,
+    makeStyles
 } from '@material-ui/core'
 import Img from 'gatsby-image'
 import { graphql, useStaticQuery } from 'gatsby'
@@ -16,12 +16,22 @@ import tools_bulletpoints from '../data/tools.json'
 import learning_bulletpoints from '../data/learning.json'
 import hacking_bulletpoints from '../data/hacking.json'
 
+const useStyles = makeStyles({
+    aboutSection: {
+        backgroundColor: 'white',
+        textAlign: 'center',
+        paddingTop: "30px",
+    }
+});
+
 const About = () => {
 
     const theme = useTheme();
     const isMobile = useMediaQuery(theme.breakpoints.down("xs"))
     const isSmall = useMediaQuery(theme.breakpoints.down("sm"))
     const isMedium = useMediaQuery(theme.breakpoints.down("md"))
+
+    const classes = useStyles()
 
     const data = useStaticQuery(graphql`
     query MyQuery1 {
@@ -36,7 +46,7 @@ const About = () => {
     `)
 
     return (
-        <div className="about-section" id="about">
+        <Box className={classes.aboutSection} id="about">
             <Typography variant="h3">About Me</Typography>
             <Grid 
                 container
@@ -103,7 +113,7 @@ const About = () => {
                     </Box>
                 </Grid>
             </Grid>
-        </div>
+        </Box>
     )
 }
 
