@@ -1,17 +1,16 @@
-import React from 'react'
-import { makeStyles } from '@material-ui/core/styles';
-import { Typography, Box } from '@material-ui/core';
-import { OutboundLink } from 'gatsby-plugin-google-analytics'
-import contactList from '../data/contact.json'
-import iconMap from './Icons'
+import React from 'react';
+import { makeStyles, Typography, Box } from '@material-ui/core';
+import { OutboundLink } from 'gatsby-plugin-google-analytics';
+import contactList from '../data/contact.json';
+import iconMap from './Icons';
 
 const useStyles = makeStyles({
     contactSection: {
         backgroundColor: 'white',
         textAlign: 'center',
-        height: "400px",
-        width: "100%",
-        paddingTop: "30px",
+        height: '400px',
+        width: '100%',
+        paddingTop: '30px',
     },
     iconBox: {
         justifyContent: 'space-evenly',
@@ -23,7 +22,7 @@ const useStyles = makeStyles({
 
 const Contact = () => {
 
-    const classes = useStyles()
+    const classes = useStyles();
 
     return (
         <Box className={classes.contactSection} id="contact">
@@ -47,7 +46,7 @@ const Contact = () => {
                 }
             </Box>
         </Box>
-    )
-}
+    );
+};
 
-export default Contact
+export default Contact;

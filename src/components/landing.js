@@ -1,14 +1,15 @@
-import React from 'react'
-import { graphql, useStaticQuery } from 'gatsby'
-import Img from 'gatsby-image'
-import { Typography, Box, makeStyles } from '@material-ui/core'
-import { useSpring, animated } from 'react-spring'
-import iconMap from './Icons'
+import React from 'react';
+import { graphql, useStaticQuery } from 'gatsby';
+import Img from 'gatsby-image';
+import { Typography, Box, makeStyles } from '@material-ui/core';
+import { Link } from 'react-scroll';
+import { useSpring, animated } from 'react-spring';
+import iconMap from './Icons';
 
 const useStyles = makeStyles({
     landingSection: {
-        width: "100%",
-        height: "100vh",
+        width: '100%',
+        height: '100vh',
         position: 'relative'
     },
     center: {
@@ -16,32 +17,39 @@ const useStyles = makeStyles({
         color: 'white',
         textAlign: 'center',
         position: 'absolute',
-        top: "47%",
-        left: "50%",
-        marginRight: "-50%",
+        top: '47%',
+        left: '50%',
+        marginRight: '-50%',
         transform: `translate(-50%, -50%)`
     },
     arrow: {
         position: 'absolute',
         bottom: 0,
         display: 'block',
-        left: "50%",
-        marginLeft: "-3px",
-        width: "100px",
+        left: '50%',
+        marginLeft: '-3px',
+        width: '100px',
         zIndex: 1,
         color: 'white'
     },
     name: {
-        fontSize: "62px",
+        fontSize: '62px',
     },
     greetings: {
-        fontSize: "20px"
+        fontSize: '20px'
+    },
+    backgroundImage: {
+        position: 'absolute',
+        left: 0,
+        top: 0,
+        width: '100%',
+        height: '100%'
     }
-})
+});
 
 const Landing = () => {
     
-    const classes = useStyles()
+    const classes = useStyles();
 
     const data = useStaticQuery(graphql`
     query MyQuery {
@@ -53,25 +61,19 @@ const Landing = () => {
         }
         }
     }
-    `)
+    `);
 
     const arrowProps = useSpring({
         from: { opacity: 0, marginTop: -1500 },
         to: { opacity: 1, marginTop: 0 }
-    })
+    });
     
     return (
         <Box className={classes.landingSection} id="main">
             <Img 
                 fluid={data.landingPageImage.childImageSharp.fluid}
                 alt="Landing Page"
-                style={{
-                    position: "absolute",
-                    left: 0,
-                    top: 0,
-                    width: "100%",
-                    height: "100%"
-                }}
+                className={classes.backgroundImage}
             />
             <Box className={classes.center}>
                 <Typography variant="h1" className={classes.name}>
@@ -81,13 +83,20 @@ const Landing = () => {
                     Software Engineer | Mobile Developer
                 </Typography>
             </Box>
-            <Box className={classes.arrow}>
-                <animated.div style={arrowProps}>
-                    {iconMap("chevron")}
-                </animated.div>    
-            </Box>
+            <Link
+                to={"about"}
+                smooth={true}
+                offset={-60}
+                duration={500}
+            >
+                <Box className={classes.arrow}>
+                    <animated.div style={arrowProps}>
+                        {iconMap("chevron")}
+                    </animated.div>    
+                </Box>
+            </Link>
         </Box>
-    )
-}
+    );
+};
 
-export default Landing
+export default Landing;

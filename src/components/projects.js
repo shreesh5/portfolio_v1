@@ -1,28 +1,21 @@
-import React, { useState } from 'react'
-import { Typography } from '@material-ui/core'
-import Card from './Card'
-import { Grid } from '@material-ui/core'
+import React, { useState } from 'react';
+import { Typography, Grid, makeStyles, MenuItem, FormControl, Select,Box, Container } from '@material-ui/core';
+import Card from './Card';
 import projectList from "../data/projects.json";
-import { makeStyles } from '@material-ui/core/styles';
-import MenuItem from '@material-ui/core/MenuItem';
-import FormControl from '@material-ui/core/FormControl';
-import Select from '@material-ui/core/Select';
-import { graphql, useStaticQuery } from 'gatsby'
-import Box from "@material-ui/core/Box";
-import Container from '@material-ui/core/Container';
+import { graphql, useStaticQuery } from 'gatsby';
 
 const useStyles = makeStyles({
     projectSection: {
         backgroundColor: '#FFEBEE',
         textAlign: 'center',
         justifyContent: 'center',
-        paddingTop: "30px",
-        paddingBottom: "30px"
+        paddingTop: '30px',
+        paddingBottom: '30px'
     },
     gridContainer: {
-        width: "100%",
-        display: "flex",
-        flexWrap: "wrap",
+        width: '100%',
+        display: 'flex',
+        flexWrap: 'wrap',
     },
     formControl: {
         minWidth: 200,
@@ -39,19 +32,19 @@ const useStyles = makeStyles({
 
 const Projects = () => {
 
-    const classes = useStyles()
+    const classes = useStyles();
 
-    const [type, setType] = useState('all')
+    const [type, setType] = useState("all");
 
-    const filteredProjectList = type === 'all' ? projectList : projectList.filter((project) => {
+    const filteredProjectList = type === "all" ? projectList : projectList.filter((project) => {
         return (
             project.type === type
-        )
-    })
+        );
+    });
 
     const handleChange = (event) => {
         setType(event.target.value)
-    }
+    };
 
     const data = useStaticQuery(graphql`
         query ProjectImgsQuery {
@@ -70,7 +63,7 @@ const Projects = () => {
             }
             }
         }
-    `)
+    `);
     const { edges: projectImgData } = data.ProjectImgs;
 
     return (
@@ -78,10 +71,8 @@ const Projects = () => {
             <Typography variant="h3">
                 Projects
             </Typography>
-            <FormControl variant="outlined" hiddenLabel={true} className={classes.formControl}>
+            <FormControl variant="outlined" className={classes.formControl}>
                 <Select
-                    labelId="aria-label"
-                    id="demo-simple-select-outlined"
                     value={type}
                     onChange={handleChange}
                     label="type"
@@ -115,7 +106,7 @@ const Projects = () => {
             </Grid>
             </Container>
         </Box>
-    )
-}
+    );
+};
 
-export default Projects
+export default Projects;

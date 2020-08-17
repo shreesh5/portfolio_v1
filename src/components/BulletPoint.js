@@ -1,28 +1,50 @@
-import React from 'react'
-import { Box, Typography } from '@material-ui/core'
-import iconMap from './Icons'
+import React from 'react';
+import { Box, Typography, makeStyles } from '@material-ui/core';
+import iconMap from './Icons';
+
+const useStyles = makeStyles({
+    heading: {
+        display: 'flex',
+        flexDirection: 'row'
+    },
+    title: {
+        marginTop: 3,
+        marginLeft: 5
+    },
+    content: {
+        display: 'flex',
+        flexDirection: 'column',
+        marginLeft: 30
+    },
+    text: {
+        textAlign: 'left',
+        marginBottom: 10
+    }
+});
 
 const BulletPoint = ({ title, text }) => {
 
+    const classes = useStyles();
+
     return (
         <Box style={{ marginBottom: 25 }}>
-            <Box style={{flexDirection: 'row', display: 'flex'}}>
+            <Box className={classes.heading}>
                 { iconMap("outlinedarrow") }
-                <Typography variant="h5" style={{ marginTop: 3, marginLeft:5}}>
+                <Typography variant="h5" className={classes.title}>
                     {title}
                 </Typography>
             </Box>
-            <Box style={{flexDirection: 'column', display: 'flex', marginLeft: 30}}>
+            <Box className={classes.content}>
                 {
                     text.map(t => (
-                        <Typography variant="body1" align="left" style={{marginBottom: 10}}>
+                        <Typography variant="body1" className={classes.text}>
                             {t}
                         </Typography>
                     ))
                 }
             </Box>
         </Box>
-    )
-}
+    );
+};
 
-export default BulletPoint
+export default BulletPoint;

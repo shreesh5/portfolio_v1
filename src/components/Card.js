@@ -1,15 +1,17 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import Typography from '@material-ui/core/Typography';
-import CardActionArea from '@material-ui/core/CardActionArea';
-import Img from 'gatsby-image'
-import iconMap from './Icons'
-import IconButton from '@material-ui/core/IconButton'
-import { OutboundLink } from 'gatsby-plugin-google-analytics'
+import { 
+    makeStyles, 
+    Card, 
+    CardActions, 
+    CardContent, 
+    CardMedia, 
+    Typography, 
+    CardActionArea,
+    IconButton 
+} from '@material-ui/core';
+import Img from 'gatsby-image';
+import iconMap from './Icons';
+import { OutboundLink } from 'gatsby-plugin-google-analytics';
 
 const useStyles = makeStyles({
     root: {
@@ -27,21 +29,24 @@ const useStyles = makeStyles({
         marginBottom: 12,
     },
     media: {
-        width: "100%",
-        height: "100%",
+        width: '100%',
+        height: '100%',
     },
     imgContainer: {
-        width: "100%",
+        width: '100%',
         height: 210,
-        "&:hover $media" : {
+        '&:hover $media' : {
             transform: `scale(0.97)`
-        }
+        },
+        display: 'flex',
+        justifyContent: 'center',
+        borderBottom: '2px solid black'
     },
-    cardcontent: {
-        padding: 0,
-        "&:last-child": {
-            paddingBottom: 0
-        }
+    cardContent: {
+        textAlign: 'left',
+        height: 160, 
+        width: '100%',
+        padding: 15
     },
     iconStyle: {
         '& svg': {
@@ -49,11 +54,20 @@ const useStyles = makeStyles({
         }
     },
     actionAreaContainer: {
-        "&:hover $focusHighlight": {
+        '&:hover $focusHighlight': {
             opacity: 0 
         }
     },
-    focusHighlight: {}
+    focusHighlight: {},
+    description: {
+        fontSize: 14,
+        lineHeight: 'normal'
+    },
+    iconArea: {
+        textAlign: 'left',
+        height: 50,
+        width: '100%'
+    }
 });
 
 export default function OutlinedCard({ title, description, fluid, url }) {
@@ -63,23 +77,23 @@ export default function OutlinedCard({ title, description, fluid, url }) {
     return (
         <Card className={classes.root} variant="outlined">
         <CardActionArea classes={{ root: classes.actionAreaContainer, focusHighlight: classes.focusHighlight }} >
-            <CardMedia className={classes.imgContainer} style={{ display: 'flex', justifyContent: 'center', borderBottom: '2px solid black'}}>
+            <CardMedia className={classes.imgContainer}>
                 <Img 
                     alt="Screenshot of Project"
                     fluid={fluid}
                     className={classes.media}
                 />
             </CardMedia>
-            <CardContent style={{ textAlign: 'left', height: 160, width: "100%", padding: 15 }}>
+            <CardContent className={classes.cardContent}>
             <Typography gutterBottom>
                 {title}
             </Typography>
-            <Typography color="textSecondary" component="p" style={{fontSize: 14, lineHeight: 'normal'}}>
+            <Typography color="textSecondary" component="p" className={classes.description} >
                 {description}
             </Typography>
             </CardContent>
         </CardActionArea>
-        <CardActions disableSpacing style={{ textAlign: 'left', height: 50, width: "100%"}}>
+        <CardActions disableSpacing className={classes.iconArea}>
             <OutboundLink
                 href={url}
                 target="_blank"
@@ -92,4 +106,4 @@ export default function OutlinedCard({ title, description, fluid, url }) {
         </CardActions>
         </Card>
     );
-}
+};

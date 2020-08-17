@@ -1,21 +1,21 @@
-import React from 'react'
-import { Link } from 'react-scroll'
+import React from 'react';
+import { Link } from 'react-scroll';
 import { Typography, makeStyles } from '@material-ui/core';
 
 const useStyles = makeStyles({
   link: {
-    "&:hover": {
+    '&:hover': {
       textDecoration: 'underline' 
     }
   },
   linkactive: {
     textDecoration: 'underline'
   }
-})
+});
 
 const NavBarLink = ({ name, to }) => {
   
-  const classes = useStyles()
+  const classes = useStyles();
   
   return (
     <Link 
@@ -34,7 +34,7 @@ const NavBarLink = ({ name, to }) => {
         {name}
       </Typography>
     </Link>
-  )
-}
+  );
+};
 
-export default NavBarLink
+export default NavBarLink;
