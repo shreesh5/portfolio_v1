@@ -74,7 +74,6 @@ export default function MenuAppBar() {
             <Toolbar>
               <OutboundLink
                   href="https://www.shreeshnayak.com"
-                  target="_blank"
                   className={classes.title}
               >
                 <Typography variant="h6">
