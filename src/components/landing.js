@@ -2,6 +2,7 @@ import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 import Img from 'gatsby-image'
 import { Typography, Box, makeStyles } from '@material-ui/core'
+import { useSpring, animated } from 'react-spring'
 import iconMap from './Icons'
 
 const useStyles = makeStyles({
@@ -53,6 +54,11 @@ const Landing = () => {
         }
     }
     `)
+
+    const arrowProps = useSpring({
+        from: { opacity: 0, marginTop: -1500 },
+        to: { opacity: 1, marginTop: 0 }
+    })
     
     return (
         <Box className={classes.landingSection} id="main">
@@ -76,7 +82,9 @@ const Landing = () => {
                 </Typography>
             </Box>
             <Box className={classes.arrow}>
-                {iconMap("chevron")}    
+                <animated.div style={arrowProps}>
+                    {iconMap("chevron")}
+                </animated.div>    
             </Box>
         </Box>
     )
