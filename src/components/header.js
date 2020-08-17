@@ -96,6 +96,7 @@ export default function MenuAppBar() {
                               <OutboundLink
                                 href="https://drive.google.com/file/d/1-RPAwiFsqEOplJ-9ruOAXJ_M82FwszQP/view?usp=sharing"
                                 target="_blank"
+                                style={{textDecoration: 'none' }}
                               >
                                 <Button 
                                   variant="contained" 
@@ -118,6 +119,7 @@ export default function MenuAppBar() {
                         <OutboundLink
                           href="https://drive.google.com/file/d/1-RPAwiFsqEOplJ-9ruOAXJ_M82FwszQP/view?usp=sharing"
                           target="_blank"
+                          style={{textDecoration: 'none' }}
                         >
                           <Button 
                             variant="contained" 

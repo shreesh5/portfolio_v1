@@ -4,7 +4,6 @@ import Card from './Card'
 import { Grid } from '@material-ui/core'
 import projectList from "../data/projects.json";
 import { makeStyles } from '@material-ui/core/styles';
-import InputLabel from '@material-ui/core/InputLabel';
 import MenuItem from '@material-ui/core/MenuItem';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
@@ -79,15 +78,14 @@ const Projects = () => {
             <Typography variant="h3">
                 Projects
             </Typography>
-            <FormControl variant="outlined" className={classes.formControl}>
-                <InputLabel id="demo-simple-select-outlined-label">Type</InputLabel>
+            <FormControl variant="outlined" hiddenLabel={true} className={classes.formControl}>
                 <Select
-                    labelId="demo-simple-select-outlined-label"
+                    labelId="aria-label"
                     id="demo-simple-select-outlined"
                     value={type}
                     onChange={handleChange}
                     label="type"
-                    align="center"
+                    notched={false}
                 >
                 <MenuItem value="all">All Projects</MenuItem>
                 <MenuItem value="web-mobile-dev">Web/Mobile Development</MenuItem>

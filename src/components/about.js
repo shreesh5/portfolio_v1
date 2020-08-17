@@ -78,7 +78,7 @@ const About = () => {
                         />
                         <BulletPoint 
                             title="When I'm not coding, I'm"
-                            text ="Playing Football | Watching Anime | Exercising | Reading | Learning New Languages"
+                            text ="Playing Football | Watching Anime | Reading | Listening to Music | Exercising | Learning New Languages"
                         />
                     </Box>
                 </Grid>
