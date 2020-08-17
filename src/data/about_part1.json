@@ -1,0 +1,22 @@
+[
+    {
+        "title": "What I Aspire to Do",
+        "text": [
+            "My goal as a software engineer is to build meangingful perfomant applications that can make a positive impact and improve lives."
+        ]
+    },
+    {
+        "title": "What I'm Currently Doing",
+        "text" : [
+            "I am pursuing my Master's degree in Computer Science at Arizona State University, where I am also working as a Student Mobile Developer at the University Technology Office.", 
+            "I recently attended HP's Summer Scholars Program and took part in their Bot-A-Thon competiton in which my team placed 2nd out 21 teams.",
+            "In my free time, I take different online courses to expand my knowledge and improve my skillset as an engineer."
+        ]
+    },
+    {
+        "title": "When I'm not coding, I'm",
+        "text": [
+            "Playing Football | Watching Anime | Reading | Listening to Music | Exercising | Learning New Languages"
+        ]
+    }
+]

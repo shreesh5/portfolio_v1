@@ -12,9 +12,8 @@ import Img from 'gatsby-image'
 import { graphql, useStaticQuery } from 'gatsby'
 import BulletPoint from './BulletPoint'
 import BottomBulletPoint from './BottomBulletPoint'
-import tools_bulletpoints from '../data/tools.json'
-import learning_bulletpoints from '../data/learning.json'
-import hacking_bulletpoints from '../data/hacking.json'
+import about1_bulletpoints from '../data/about_part1.json'
+import about2_bulletpoints from '../data/about_part2.json'
 
 const useStyles = makeStyles({
     aboutSection: {
@@ -67,19 +66,15 @@ const About = () => {
                     </Paper>
                 </Grid>
                 <Grid item xs={12} sm={12} md={12} lg={6}  align={!isMedium ? "left" : "center"}>
-                    <Box border={1} style={{flexDirection: 'column', display: 'flex', minWidth: 350, maxWidth: 500, height: "100%"}}>
-                        <BulletPoint 
-                            title="What I Aspire to Do"        
-                            text = "My goal as a software engineer is to build applications that make an impact and improve lives. I beleive that through code we can make the world a better place by building products that empower people and make life easier."
-                        />
-                        <BulletPoint 
-                            title="What I'm Currently Doing"
-                            text="I am currently pursuing my MS in Computer Science degree at Arizona State University. I am also working as a Mobile Developer at the University Technology Office."
-                        />
-                        <BulletPoint 
-                            title="When I'm not coding, I'm"
-                            text ="Playing Football | Watching Anime | Reading | Listening to Music | Exercising | Learning New Languages"
-                        />
+                    <Box style={{flexDirection: 'column', display: 'flex', minWidth: 350, maxWidth: 500, height: "100%"}}>
+                        {
+                            about1_bulletpoints.map(bulletpoint => (
+                                <BulletPoint 
+                                    title={bulletpoint.title}
+                                    text={bulletpoint.text}
+                                />
+                            ))
+                        }
                     </Box>
                 </Grid>
                 <Grid item xs={12} sm={12} md={12} lg={12} align="center">
@@ -92,24 +87,16 @@ const About = () => {
                         marginLeft={!isMedium ? 6 : 0}
                         
                     >
-                        <BottomBulletPoint
-                            title="Toolbox"
-                            points={tools_bulletpoints}
-                            icon="toolbox"
-                            isMobile={isSmall}
-                        />
-                        <BottomBulletPoint
-                            title="Learning"
-                            points={learning_bulletpoints}
-                            icon="book"
-                            isMobile={isSmall}
-                        />
-                        <BottomBulletPoint
-                            title="Hacking On"
-                            points={hacking_bulletpoints}
-                            icon="webdev"
-                            isMobile={isSmall}
-                        />
+                        {
+                            about2_bulletpoints.map(bulletpoint => (
+                                <BottomBulletPoint 
+                                    title={bulletpoint.title}
+                                    icon={bulletpoint.icon}
+                                    points={bulletpoint.points}
+                                    isMobile={isSmall}
+                                />
+                            ))
+                        }
                     </Box>
                 </Grid>
             </Grid>

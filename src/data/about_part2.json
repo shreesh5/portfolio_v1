@@ -1,0 +1,46 @@
+[
+    {
+        "title": "Toolbox",
+        "icon": "toolbox",
+        "points": [
+            {
+                "title": "Languages and Frameworks: ",
+                "text": "Python, JavaScript, HTML, CSS, SQL, ReactJS, React-Native, Django, Flask"
+            },
+            {
+                "title": "Databases: ",
+                "text": "MongoDB, Firebase, PostgreSQL"
+            },
+            {
+                "title": "Other Tools: ",
+                "text": "Git, Heroku, Windows, Unix/Linux"
+            }
+        ]
+    },
+    {
+        "title": "Learning",
+        "icon": "book",
+        "points": [
+            {
+                "title": "Currently: ",
+                "text": "AWS Lambda, DynamoDB, GraphQL"
+            },
+            {
+                "title": "On The Radar: ",
+                "text": "SEO"
+            }
+        ]
+    },
+    {
+        "title": "Hacking On",
+        "icon": "webdev",
+        "points": [
+            {
+                "text": "Earning my MSCS degree"
+            },
+            {
+                "text": "Contributing to the Mobile team at ASU"
+            }
+        ]
+    }
+]
