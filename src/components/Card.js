@@ -16,20 +16,17 @@ import { OutboundLink } from 'gatsby-plugin-google-analytics';
 const useStyles = makeStyles({
     root: {
         maxWidth: '350px',
-        maxHeight: '420px',
-        //maxWidth: 350,
+        height: '420px',
+        //minWidth: '275px',
         //maxHeight: 420,
-        //marginLeft: 30,
-        marginBottom: 40,
+        //marginLeft: '10px',
+        marginBottom: '40px',
         borderColor: 'black',
         borderWidth: 2,
         display: 'block'
     },
     title: {
-        fontSize: 14,
-    },
-    pos: {
-        marginBottom: 12,
+        fontSize: 16,
     },
     media: {
         width: '100%',
@@ -49,7 +46,7 @@ const useStyles = makeStyles({
         textAlign: 'left',
         height: '160px', 
         width: '100%',
-        padding: 15
+        padding: '15px'
     },
     iconStyle: {
         '& svg': {
@@ -88,7 +85,7 @@ export default function OutlinedCard({ title, description, fluid, url }) {
                 />
             </CardMedia>
             <CardContent className={classes.cardContent}>
-            <Typography gutterBottom>
+            <Typography gutterBottom className={classes.title}>
                 {title}
             </Typography>
             <Typography color="textSecondary" component="p" className={classes.description} >

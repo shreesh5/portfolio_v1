@@ -22,27 +22,25 @@ const useStyles = makeStyles({
         paddingTop: '30px',
     },
     grid: {
-        padding: 50,
+        padding: '50px',
         width: '100%',
         display: 'flex',
         flexWrap: 'wrap',
-        marginBottom: 15
+        marginBottom: 15,
     },
     image: {
-        maxWidth: 450,
-        minWidth: 350
+        maxWidth: '450px',
+        marginBottom: '25px'
     },
     rightAboutPoints: {
         flexDirection: 'column', 
-        display: 'flex', 
-        minWidth: 350, 
-        maxWidth: 500, 
+        display: 'flex',  
+        maxWidth: '500px', 
         height: '100%'
     },
     bottomAboutPoints: {
         display: 'flex',
         justifyContent: 'space-between',
-        minWidth: 350
     }
 });
 
@@ -72,17 +70,17 @@ const About = () => {
             <Typography variant="h3">About Me</Typography>
             <Grid 
                 container
-                spacing={3}
+                spacing={!isSmall ? 3 : 0}
                 className={classes.grid}
             >
-                <Grid item xs={12} sm={12} md={12} lg={6} align={!isMedium ? "right" : "center"}>
+                <Grid item xs={12} sm={12} md={6} lg={6} align={!isMedium ? "right" : "center"}>
                     <Paper elevation={15} className={classes.image}>
                         <Img 
                             fluid={data.profilePicture.childImageSharp.fluid}
                         />
                     </Paper>
                 </Grid>
-                <Grid item xs={12} sm={12} md={12} lg={6}  align={!isMedium ? "left" : "center"}>
+                <Grid item xs={12} sm={12} md={6} lg={6}  align={!isMedium ? "left" : "center"}>
                     <Box className={classes.rightAboutPoints}>
                         {
                             about1_bulletpoints.map(bulletpoint => (
@@ -97,7 +95,7 @@ const About = () => {
                 <Grid item xs={12} sm={12} md={12} lg={12} align="center">
                     <Box 
                         flexDirection={!isSmall ? "row" : "column"}  
-                        width={!isMobile ? "55%" : "100%"}
+                        width={!isMedium ? "55%" : "100%"}
                         marginLeft={!isMedium ? 6 : 0}
                         className={classes.bottomAboutPoints}
                     >
@@ -111,7 +109,7 @@ const About = () => {
                                 />
                             ))
                         }
-                    </Box>
+                    </Box> 
                 </Grid>
             </Grid>
         </Box>

@@ -7,8 +7,8 @@ const useStyles = makeStyles({
         width: '33%',
     },
     mobileStyle: {
-        minWidth: 350,
-        maxWidth: 500,
+        minWidth: '350px',
+        maxWidth: '500px',
     },
     title: {
         display: 'flex',
@@ -29,10 +29,11 @@ const useStyles = makeStyles({
 
 const BottomBulletPoint = ({ isMobile, icon, title, points }) => {
 
-    const classes = useStyles(); 
+    const classes = useStyles();
+    // className={!isMobile ? classes.defaultStyle : classes.mobileStyle}
 
     return (
-        <Box className={!isMobile ? classes.defaultStyle : classes.mobileStyle} style={{ marginBottom: 15}}>
+        <Box style={{ width: '100%', marginBottom: '25px' }}>
             <Box className={classes.title}>
                 {
                     iconMap(icon)

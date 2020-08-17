@@ -36,15 +36,16 @@ const useStyles = makeStyles((theme) => ({
       justifyContent: 'space-evenly'
     },
     list: {
-      width: 200,
+      width: '200px',
       textAlign: 'center',
       justifyContent: 'space-between',
-      marginTop: 70
+      marginTop: '70px'
     },
     offset: theme.mixins.toolbar,
     buttonStyle: {
       textTransform: 'none',
-      marginTop: 3
+      marginTop: '3px',
+      marginLeft: '3px'
     }
 }));
 

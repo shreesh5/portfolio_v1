@@ -8,17 +8,17 @@ const useStyles = makeStyles({
         flexDirection: 'row'
     },
     title: {
-        marginTop: 3,
-        marginLeft: 5
+        marginTop: '3px',
+        marginLeft: '5px'
     },
     content: {
         display: 'flex',
         flexDirection: 'column',
-        marginLeft: 30
+        marginLeft: '30px'
     },
     text: {
         textAlign: 'left',
-        marginBottom: 10
+        marginBottom: '10px'
     }
 });
 
@@ -27,7 +27,7 @@ const BulletPoint = ({ title, text }) => {
     const classes = useStyles();
 
     return (
-        <Box style={{ marginBottom: 25 }}>
+        <Box style={{ marginBottom: '25px' }}>
             <Box className={classes.heading}>
                 { iconMap("outlinedarrow") }
                 <Typography variant="h5" className={classes.title}>

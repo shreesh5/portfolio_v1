@@ -16,14 +16,15 @@ const useStyles = makeStyles({
         width: '100%',
         display: 'flex',
         flexWrap: 'wrap',
+        justifyContent: 'space-around'
     },
     formControl: {
-        minWidth: 200,
-        marginBottom: 50,
-        marginTop: 30
+        minWidth: '250px',
+        marginBottom: '50px',
+        marginTop: '30px'
       },
       selectEmpty: {
-        marginTop: 2,
+        marginTop: '2px',
       },
     root: {
         textAlign: 'center'
@@ -84,7 +85,7 @@ const Projects = () => {
                 </Select>
             </FormControl>
             <Container>
-            <Grid container spacing={3} justify="center" align="center" className={classes.gridContainer}>
+            <Grid container align="center" className={classes.gridContainer}>
                 {
                     filteredProjectList.map((project) => {
                         const image = projectImgData.find((n) => {
@@ -92,7 +93,7 @@ const Projects = () => {
                         });
                         const imageFluid = image.node.childImageSharp.fluid;
                         return (
-                            <Grid item xs={12} sm={6} md={4}>
+                            <Grid item xs={12} sm={12} md={6} lg={4} >
                                 <Card 
                                     title={project.name}
                                     fluid={imageFluid}
