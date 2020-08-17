@@ -15,12 +15,15 @@ import { OutboundLink } from 'gatsby-plugin-google-analytics';
 
 const useStyles = makeStyles({
     root: {
-        width: 350,
-        height: 420,
-        marginLeft: 30,
+        maxWidth: '350px',
+        maxHeight: '420px',
+        //maxWidth: 350,
+        //maxHeight: 420,
+        //marginLeft: 30,
         marginBottom: 40,
         borderColor: 'black',
         borderWidth: 2,
+        display: 'block'
     },
     title: {
         fontSize: 14,
@@ -34,17 +37,17 @@ const useStyles = makeStyles({
     },
     imgContainer: {
         width: '100%',
-        height: 210,
+        height: '210px',
         '&:hover $media' : {
             transform: `scale(0.97)`
         },
         display: 'flex',
         justifyContent: 'center',
-        borderBottom: '2px solid black'
+        borderBottom: '2px solid black',
     },
     cardContent: {
         textAlign: 'left',
-        height: 160, 
+        height: '160px', 
         width: '100%',
         padding: 15
     },
@@ -61,11 +64,11 @@ const useStyles = makeStyles({
     focusHighlight: {},
     description: {
         fontSize: 14,
-        lineHeight: 'normal'
+        lineHeight: 'normal',
     },
     iconArea: {
         textAlign: 'left',
-        height: 50,
+        height: '50px',
         width: '100%'
     }
 });
