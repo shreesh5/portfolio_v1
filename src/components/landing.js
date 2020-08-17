@@ -1,11 +1,47 @@
 import React from 'react'
-import './landing.css'
 import { graphql, useStaticQuery } from 'gatsby'
 import Img from 'gatsby-image'
-import { Typography } from '@material-ui/core'
+import { Typography, Box, makeStyles } from '@material-ui/core'
+import iconMap from './Icons'
+
+const useStyles = makeStyles({
+    landingSection: {
+        width: "100%",
+        height: "100vh",
+        position: 'relative'
+    },
+    center: {
+        margin: 0,
+        color: 'white',
+        textAlign: 'center',
+        position: 'absolute',
+        top: "47%",
+        left: "50%",
+        marginRight: "-50%",
+        transform: `translate(-50%, -50%)`
+    },
+    arrow: {
+        position: 'absolute',
+        bottom: 0,
+        display: 'block',
+        left: "50%",
+        marginLeft: "-3px",
+        width: "100px",
+        zIndex: 1,
+        color: 'white'
+    },
+    name: {
+        fontSize: "62px",
+    },
+    greetings: {
+        fontSize: "20px"
+    }
+})
 
 const Landing = () => {
     
+    const classes = useStyles()
+
     const data = useStaticQuery(graphql`
     query MyQuery {
         landingPageImage: file(relativePath: {eq: "MaterialRed.jpg"}) {
@@ -19,7 +55,7 @@ const Landing = () => {
     `)
     
     return (
-        <div className="landing-section" id="main">
+        <Box className={classes.landingSection} id="main">
             <Img 
                 fluid={data.landingPageImage.childImageSharp.fluid}
                 alt="Landing Page"
@@ -31,15 +67,18 @@ const Landing = () => {
                     height: "100%"
                 }}
             />
-            <div className="center">
-                <Typography variant="h1" className="name">
+            <Box className={classes.center}>
+                <Typography variant="h1" className={classes.name}>
                     Hi, I'm Shreesh
                 </Typography>
-                <Typography variant="subtitle1" className="greetings">
+                <Typography variant="subtitle1" className={classes.greetings}>
                     Software Engineer | Mobile Developer
                 </Typography>
-            </div>
-        </div>
+            </Box>
+            <Box className={classes.arrow}>
+                {iconMap("chevron")}    
+            </Box>
+        </Box>
     )
 }
 

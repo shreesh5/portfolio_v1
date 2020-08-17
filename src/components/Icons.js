@@ -1,6 +1,23 @@
 import React from 'react'
 import { SvgIcon } from '@material-ui/core'
 
+const ChevronIcon = () => {
+    return (
+        <SvgIcon
+            fontSize="small"  
+            //style={{ color: 'white' }}
+            x="0px" y="0px" 
+            viewBox="0 0 30.727 30.727" 
+            //style= "enable-background:new 0 0 30.727 30.727;"
+        >
+            <g>
+                <path d="M29.994,10.183L15.363,24.812L0.733,10.184c-0.977-0.978-0.977-2.561,0-3.536c0.977-0.977,2.559-0.976,3.536,0
+                    l11.095,11.093L26.461,6.647c0.977-0.976,2.559-0.976,3.535,0C30.971,7.624,30.971,9.206,29.994,10.183z"/>
+            </g>
+        </SvgIcon>
+    )
+}
+
 const MenuIcon = () => {
     return (
         <SvgIcon fontSize="inherit" viewBox="0 0 512 512" style={{ color: 'white', marginBottom: 5}}>
@@ -189,6 +206,7 @@ const EmailIcon = () => {
 export const iconMap = ( icon ) => {
     
     const iconMapping = {
+        "chevron": ChevronIcon(),
         "menu": MenuIcon(),
         "outlinedarrow": OutlinedArrowIcon(),
         "toolbox": ToolBoxIcon(),
