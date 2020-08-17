@@ -25,7 +25,7 @@ const Footer = () => {
                 Inspired by many
             </Typography>
             <Typography>
-                Coded by Shreesh
+                Coded by Shreesh Nayak
             </Typography>
         </Box>
     );
