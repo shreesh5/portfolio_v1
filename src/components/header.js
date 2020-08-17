@@ -26,6 +26,8 @@ const useStyles = makeStyles((theme) => ({
     },
     title: {
       flexGrow: 1,
+      textDecoration: 'none',
+      color: 'white'
     },
     headerOptions: {
       display: "flex",
@@ -70,9 +72,15 @@ export default function MenuAppBar() {
     <div className={classes.root}>
         <AppBar position="fixed" style={ !trigger ? { background: "transparent", boxShadow: "none" } : {} } color="primary">
             <Toolbar>
-                <Typography variant="h6" className={classes.title}>
+              <OutboundLink
+                  href="https://www.shreeshnayak.com"
+                  target="_blank"
+                  className={classes.title}
+              >
+                <Typography variant="h6">
                     Shreesh Nayak
                 </Typography>
+              </OutboundLink>
             <div>
                 { isMobile ? 
                     <>
