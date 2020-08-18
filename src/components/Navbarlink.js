@@ -6,7 +6,8 @@ const useStyles = makeStyles({
   link: {
     '&:hover': {
       textDecoration: 'underline' 
-    }
+    },
+    cursor: 'pointer'
   },
   linkactive: {
     textDecoration: 'underline'

@@ -85,7 +85,7 @@ export default function OutlinedCard({ title, description, fluid, url }) {
                 />
             </CardMedia>
             <CardContent className={classes.cardContent}>
-            <Typography gutterBottom className={classes.title}>
+            <Typography gutterBottom>
                 {title}
             </Typography>
             <Typography color="textSecondary" component="p" className={classes.description} >

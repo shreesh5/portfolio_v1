@@ -30,7 +30,7 @@
     {
       "name": "Project Classifier",
       "type": "machine-learning",
-      "description": "A project classification web application that allows students to upload project files to a website where the project will get classified into a certain category based on the text present in its abstract. This application also allows teachers to view uploaded projects. Built using: Django.",
+      "description": "A project classification web application that allows students to upload project files to a website where the project will get classified into a certain category based on the text present in its abstract. Built using: Django.",
       "img": "ProjectClassifier.png",
       "url": "https://github.com/shreesh5/iwt"
     },
@@ -44,12 +44,12 @@
     {
       "name": "Multi-Object Detection and Tracking Tool",
       "type": "machine-learning",
-      "description": "Allows users to specify a sequence of frames in which vehicles will be detected and a specified number of vehicles will be tracked (this number is maintained throughout the sequence). Built using: YOLO, MEEM, Matlab and Python.",
+      "description": "A simplistic tool that performs the task of vehicle detection and subsequent tracking of a selected number of vehicles, specifically for aerial image sequences. Built using: YOLO, MEEM, Matlab and Python.",
       "img": "MEEM.png",
       "url": "https://github.com/shreesh5/meem"
     },
     {
-      "name": "NBA Player Network Visualization and Analysis",
+      "name": "NBA Network Visualization and Analysis",
       "type": "machine-learning",
       "description": "This project visualizes a network of 10 prominent NBA players and 50 of their followers each. It calculates degree distribution, eigenvector centrality and betweenness centrality for the same. Built using: Python, NetworkX and NumPy.",
       "img": "SocialNetwork.png",
