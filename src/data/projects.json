@@ -60,7 +60,7 @@
       "type": "machine-learning",
       "description": "This project focuses on creating various machine learning models to predict whether AAPL and AMZN stocks will rise or fall in a given timeframe based on the data present in viral tweets and news. Built using: Python.",
       "img": "StockPrediction.png",
-      "url": "https://github.com/shreesh5/SWM-stock-prediction"
+      "url": "https://github.com/shreesh5/stock-prediction"
     },
     {
       "name": "Jobs",
