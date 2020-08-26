@@ -5,15 +5,15 @@
         "points": [
             {
                 "title": "Languages and Frameworks: ",
-                "text": "Python, JavaScript, HTML, CSS, SQL, ReactJS, React-Native, Django, Flask"
+                "text": "Python, JavaScript, HTML, CSS, SQL, ReactJS, React Native, GatsbyJS, Django, Flask"
             },
             {
                 "title": "Databases: ",
-                "text": "MongoDB, Firebase, PostgreSQL"
+                "text": "MongoDB, Firebase, PostgreSQL, Amazon DynamoDB"
             },
             {
                 "title": "Other Tools: ",
-                "text": "Git, Heroku, Windows, Unix/Linux"
+                "text": "AWS, Git, Heroku, Netlify, Windows, Unix/Linux"
             }
         ]
     },
@@ -23,11 +23,11 @@
         "points": [
             {
                 "title": "Currently: ",
-                "text": "AWS Lambda, DynamoDB, GraphQL"
+                "text": "GraphQL, Docker"
             },
             {
                 "title": "On The Radar: ",
-                "text": "Docker, Kubernetes, SEO"
+                "text": "Kubernetes, SEO"
             }
         ]
     },
