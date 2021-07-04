@@ -20,6 +20,16 @@
       }
     },
     {
+      "name": "Encourse",
+      "type": "web-mobile-dev",
+      "description": "Full stack assessment completed to demonstrate proficiency in React Native & Django. Encourse is a mobile application designed for students and administrators. It allows students to enroll/drop courses and allows admins to create/edit/delete courses as well as to view/edit/delete users. Built using React Native, Django, and PostgreSQL.",
+      "img": "Encourse.png",
+      "icons": ["github"],
+      "links": {
+        "github": "https://www.github.com/shreesh5/encourse"
+      }
+    },
+    {
       "name": "GiftoLexia",
       "type": "web-mobile-dev",
       "description": "GiftoLexia is a startup aimed towards helping dyslexic children, it is incubated in NSRCEL, IIM, Bangalore. The app provides a list of relevant resources which aide government teachers in teaching dyslexic students.",
