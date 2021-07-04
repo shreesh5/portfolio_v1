@@ -6,10 +6,6 @@ const useStyles = makeStyles({
     defaultStyle: {
         width: '33%',
     },
-    mobileStyle: {
-        minWidth: '350px',
-        maxWidth: '500px',
-    },
     title: {
         display: 'flex',
         flexDirection: 'row'
@@ -27,10 +23,9 @@ const useStyles = makeStyles({
     }
   });
 
-const BottomBulletPoint = ({ isMobile, icon, title, points }) => {
+const BottomBulletPoint = ({ icon, title, points }) => {
 
     const classes = useStyles();
-    // className={!isMobile ? classes.defaultStyle : classes.mobileStyle}
 
     return (
         <Box style={{ width: '100%', marginBottom: '25px' }}>
@@ -45,7 +40,7 @@ const BottomBulletPoint = ({ isMobile, icon, title, points }) => {
             <Box className={classes.points}>
             {  
                 points.map(point => (
-                    <Box className={classes.point}>
+                    <Box className={classes.point} key={point.title}>
                         { iconMap("arrow") }
                         <Typography variant="body2" width="100%">
                             <b>{point.title}</b>

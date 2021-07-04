@@ -1,13 +1,13 @@
-import React from "react"
+import React from 'react';
 
-import SEO from "../components/seo"
-import "../components/layout.css"
-import MenuAppBar from '../components/header'
-import Landing from '../components/landing'
-import About from '../components/about'
-import Projects from '../components/projects'
-import Contact from '../components/contact'
-import Footer from '../components/footer'
+import SEO from '../components/seo';
+import '../components/layout.css';
+import MenuAppBar from '../components/header';
+import Landing from '../components/landing';
+import About from '../components/about';
+import Projects from '../components/projects';
+import Contact from '../components/contact';
+import Footer from '../components/footer';
 
 const IndexPage = () => (
   <React.Fragment>
@@ -19,6 +19,6 @@ const IndexPage = () => (
     <Contact />
     <Footer />
   </React.Fragment>
-)
+);
 
-export default IndexPage
+export default IndexPage;

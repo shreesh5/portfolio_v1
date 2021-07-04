@@ -5,35 +5,31 @@ import { Typography, makeStyles } from '@material-ui/core';
 const useStyles = makeStyles({
   link: {
     '&:hover': {
-      textDecoration: 'underline' 
+      textDecoration: 'underline',
     },
-    cursor: 'pointer'
+    cursor: 'pointer',
   },
   linkactive: {
-    textDecoration: 'underline'
-  }
+    textDecoration: 'underline',
+  },
 });
 
 const NavBarLink = ({ name, to }) => {
-  
   const classes = useStyles();
-  
+
   return (
-    <Link 
+    <Link
       className={classes.link}
-      //activeClass={classes.linkactive}
       to={to}
       spy={true}
       smooth={true}
       offset={-60}
       duration={500}
       style={{
-        margin: 7
+        margin: 7,
       }}
     >
-      <Typography>
-        {name}
-      </Typography>
+      <Typography>{name}</Typography>
     </Link>
   );
 };
