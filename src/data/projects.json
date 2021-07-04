@@ -30,16 +30,6 @@
     }
   },
   {
-    "name": "GiftoLexia",
-    "type": "web-mobile-dev",
-    "description": "GiftoLexia is a startup aimed towards helping dyslexic children, it is incubated in NSRCEL, IIM, Bangalore. The app provides a list of relevant resources which aide government teachers in teaching dyslexic students.",
-    "img": "GiftoLexia.png",
-    "icons": ["github"],
-    "links": {
-      "github": "https://www.github.com/shreesh5/Gifto"
-    }
-  },
-  {
     "name": "ASL Hand Gesture Classifier",
     "type": "machine-learning",
     "description": "Allows a user to make a request to an API with the JSON data of a sign language hand gesture video and receive a JSON response containing the classification gestures of four different machine learning models. Built using: Python and Flask.",
