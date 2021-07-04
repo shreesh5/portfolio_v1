@@ -51,7 +51,7 @@ const useStyles = makeStyles({
     iconStyle: {
         '& svg': {
             fontSize: 33,
-        }
+        },
     },
     actionAreaContainer: {
         '&:hover $focusHighlight': {
@@ -70,7 +70,7 @@ const useStyles = makeStyles({
     }
 });
 
-export default function OutlinedCard({ title, description, fluid, url }) {
+export default function OutlinedCard({ title, description, fluid, icons, links }) {
     
     const classes = useStyles();
 
@@ -94,15 +94,18 @@ export default function OutlinedCard({ title, description, fluid, url }) {
             </CardContent>
         </CardActionArea>
         <CardActions disableSpacing className={classes.iconArea}>
-            <OutboundLink
-                href={url}
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                <IconButton className={classes.iconStyle}>
-                    {iconMap("github")}
-                </IconButton>
-            </OutboundLink>
+            {icons && icons.map((icon) => (
+                <OutboundLink
+                    key={links[icon]}
+                    href={links[icon]}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <IconButton className={classes.iconStyle}>
+                        {iconMap(icon)}
+                    </IconButton>
+                </OutboundLink>
+            ))}
         </CardActions>
         </Card>
     );

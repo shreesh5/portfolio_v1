@@ -1,86 +1,142 @@
 [
     {
+      "name": "Hatchways Assessment",
+      "type": "web-mobile-dev",
+      "description": "Frontend assessment completed to demonstrate proficiency in React. The app fetches list of students and allows users to search via name and tag. It also allows users to add tags to each individual student profile. Built using React and TypeScript.",
+      "img": "Hatchways.png",
+      "icons": ["website"],
+      "links": {
+        "website": "https://shreesh5.github.io/hatchways-frontend/"
+      }
+    },
+    {
+      "name": "Singular Key Assessment",
+      "type": "web-mobile-dev",
+      "description": "Frontend assessment completed to demonstrate proficiency in React. The app uses the TMDB API to fetch a list of trending movies and tv shows. It allows users to navigate to individual movie/tv show's IMDB page, network homepage and a YouTube search for that media's trailer. Built using React.",
+      "img": "SingularKey.png",
+      "icons": ["website"],
+      "links": {
+        "website": "https://shreesh5.github.io/singular-key-challenge/"
+      }
+    },
+    {
       "name": "GiftoLexia",
       "type": "web-mobile-dev",
       "description": "GiftoLexia is a startup aimed towards helping dyslexic children, it is incubated in NSRCEL, IIM, Bangalore. The app provides a list of relevant resources which aide government teachers in teaching dyslexic students.",
       "img": "GiftoLexia.png",
-      "url": "https://www.github.com/shreesh5/Gifto"
+      "icons": ["github"],
+      "links": {
+        "github": "https://www.github.com/shreesh5/Gifto"
+      }
     },
     {
       "name": "ASL Hand Gesture Classifier",
       "type": "machine-learning",
       "description": "Allows a user to make a request to an API with the JSON data of a sign language hand gesture video and receive a JSON response containing the classification gestures of four different machine learning models. Built using: Python and Flask.",
       "img": "ASL.png",
-      "url": "https://github.com/shreesh5/CSE535-Assignment2"
+      "icons": ["github"],
+      "links": {
+        "github": "https://github.com/shreesh5/CSE535-Assignment2"
+      }
     },  
     {
       "name": "Stress Down",
       "type": "web-mobile-dev",
       "description": "Allows a user to monitors their stress levels using data from a GSR sensor and provides recommendations based on location if the user's stress levels escalate beyond a threshold. Built using: Android Studio, Python and Flask.",
       "img": "StressDetectionApp.png",
-      "url": "https://github.com/shreesh5/CSE535-Project"
+      "icons": ["github"],
+      "links": {
+        "github": "https://github.com/shreesh5/CSE535-Project"
+      }
     },
     {
       "name": "Faculty Task Management System",
       "type": "web-mobile-dev",
       "description": "A task management application that allows a user to keep a track of tasks that they have assigned to different faculty members. Built using: Angular and Firebase.",
       "img": "FacultyManagement.png",
-      "url": "https://github.com/shreesh5/csedept"
+      "icons": ["github"],
+      "links": {
+        "github": "https://github.com/shreesh5/csedept"
+      }
     },
     {
       "name": "Project Classifier",
       "type": "machine-learning",
       "description": "A project classification web application that allows students to upload project files to a website where the project will get classified into a certain category based on the text present in its abstract. Built using: Django.",
       "img": "ProjectClassifier.png",
-      "url": "https://github.com/shreesh5/iwt"
+      "icons": ["github"],
+      "links": {
+        "github": "https://github.com/shreesh5/iwt"
+      }
     },
     {
       "name": "Expense Tracker",
       "type": "web-mobile-dev",
       "description": "An expense tracking application that allows users to monitor their daily expenses. Built using: React, MongoDB, Node and Express.",
       "img": "ExpenseTracker.png",
-      "url": "https://github.com/shreesh5/expense-tracker-mern"
+      "icons": ["github"],
+      "links": {
+        "github": "https://github.com/shreesh5/expense-tracker-mern"
+      }
     },
     {
       "name": "Multi-Object Detection and Tracking Tool",
       "type": "machine-learning",
       "description": "A simplistic tool that performs the task of vehicle detection and subsequent tracking of a selected number of vehicles, specifically for aerial image sequences. Built using: YOLO, MEEM, Matlab and Python.",
       "img": "MEEM.png",
-      "url": "https://github.com/shreesh5/meem"
+      "icons": ["github"],
+      "links": {
+        "github": "https://github.com/shreesh5/meem"
+      }
     },
     {
       "name": "NBA Network Visualization and Analysis",
       "type": "machine-learning",
       "description": "This project visualizes a network of 10 prominent NBA players and 50 of their followers each. It calculates degree distribution, eigenvector centrality and betweenness centrality for the same. Built using: Python, NetworkX and NumPy.",
       "img": "SocialNetwork.png",
-      "url": "https://github.com/shreesh5/CSE472-Project1"
+      "icons": ["github"],
+      "links": {
+        "github": "https://github.com/shreesh5/CSE472-Project1"
+      }
     },
     {
       "name": "Directional Stock Prediction using Viral Tweets and News",
       "type": "machine-learning",
       "description": "This project focuses on creating various machine learning models to predict whether AAPL and AMZN stocks will rise or fall in a given timeframe based on the data present in viral tweets and news. Built using: Python.",
       "img": "StockPrediction.png",
-      "url": "https://github.com/shreesh5/stock-prediction"
+      "icons": ["github"],
+      "links": {
+        "github": "https://github.com/shreesh5/stock-prediction"
+      }
     },
     {
       "name": "Jobs",
       "type": "web-mobile-dev",
       "description": "A job search application that allows users to search for jobs in a particular location and swipe to like or dislike job listings based on job title, location, and description in Tinder like fashion. Built using: React-Native.",
       "img": "ReactNativeLogo.png",
-      "url": "https://github.com/shreesh5/jobs"
+      "icons": ["github"],
+      "links": {
+        "github": "https://github.com/shreesh5/jobs"
+      }
     },
     {
       "name": "Tracks",
       "type": "web-mobile-dev",
       "description": "A location tracking application that allows users to create and view records of their change in location over a period of time during a particular activity, for example a hike, bike ride or road trip. Built using: React-Native, MongoDB, Node and Express.",
       "img": "ReactNativeLogo.png",
-      "url": "https://github.com/shreesh5/tracks"
+      "icons": ["github"],
+      "links": {
+        "github": "https://github.com/shreesh5/tracks"
+      }
     },
     {
       "name": "Blogs",
       "type": "web-mobile-dev",
       "description": "A blog creation application that allows users to create, read, edit and delete blogs on a local JSON server. Built using: React-Native, Node and Express.",
       "img": "ReactNativeLogo.png",
-      "url": "https://github.com/shreesh5/blog"
+      "icons": ["github"],
+      "links": {
+        "github": "https://github.com/shreesh5/blog"
+      }
     }
 ]

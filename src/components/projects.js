@@ -98,7 +98,8 @@ const Projects = () => {
                                     title={project.name}
                                     fluid={imageFluid}
                                     description={project.description}
-                                    url={project.url}
+                                    icons={project.icons}
+                                    links={project.links}
                                 />
                             </Grid>
                         )
