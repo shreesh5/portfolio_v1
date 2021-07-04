@@ -1,22 +1,22 @@
 [
-    {
-        "title": "What I Aspire to Do",
-        "text": [
-            "My goal as a software engineer is to build meaningful performant applications that can make a positive impact and improve lives."
-        ]
-    },
-    {
-        "title": "What I'm Currently Doing",
-        "text" : [
-            "I am currently looking for full-time opportunites as a Software Engineer/Mobile Developer.",
-            "I recently graduated from Arizona State University with a Master's degree in Computer Science.",
-            "In my free time, I take different online courses to expand my knowledge and improve my skillset as an engineer."
-        ]
-    },
-    {
-        "title": "When I'm not coding, I'm",
-        "text": [
-            "Playing Football | Watching Anime | Reading | Listening to Music | Exercising | Learning New Languages"
-        ]
-    }
+  {
+    "title": "What I Aspire to Do",
+    "text": [
+      "My goal as a software engineer is to build meaningful performant applications that can make a positive impact and improve lives."
+    ]
+  },
+  {
+    "title": "What I'm Currently Doing",
+    "text": [
+      "I am currently looking for full-time opportunites as a Software Engineer/Mobile Developer.",
+      "I recently graduated from Arizona State University with a Master's degree in Computer Science.",
+      "In my free time, I take different online courses to expand my knowledge and improve my skillset as an engineer."
+    ]
+  },
+  {
+    "title": "When I'm not coding, I'm",
+    "text": [
+      "Playing Football | Watching Anime | Reading | Listening to Music | Exercising | Learning New Languages"
+    ]
+  }
 ]

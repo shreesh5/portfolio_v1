@@ -1,16 +1,17 @@
 [
-    {   
-        "name": "GitHub",
-        "icon": "github",
-        "url": "https://github.com/shreesh5"
-    },{   
-        "name": "LinkedIn",
-        "icon": "linkedin",
-        "url": "https://www.linkedin.com/in/shreeshnayak/"
-    },
-    {
-        "name": "Email",
-        "icon": "email",
-        "url": "mailto:shreeshnayak@gmail.com"
-    }
+  {
+    "name": "GitHub",
+    "icon": "github",
+    "url": "https://github.com/shreesh5"
+  },
+  {
+    "name": "LinkedIn",
+    "icon": "linkedin",
+    "url": "https://www.linkedin.com/in/shreeshnayak/"
+  },
+  {
+    "name": "Email",
+    "icon": "email",
+    "url": "mailto:shreeshnayak@gmail.com"
+  }
 ]

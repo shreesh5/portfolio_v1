@@ -1,46 +1,46 @@
 [
-    {
-        "title": "Toolbox",
-        "icon": "toolbox",
-        "points": [
-            {
-                "title": "Languages and Frameworks: ",
-                "text": "Python, JavaScript, HTML, CSS, SQL, ReactJS, React Native, GatsbyJS, Django, Flask"
-            },
-            {
-                "title": "Databases: ",
-                "text": "MongoDB, Firebase, PostgreSQL, Amazon DynamoDB"
-            },
-            {
-                "title": "Other Tools: ",
-                "text": "AWS, Git, Heroku, Netlify, Windows, Unix/Linux"
-            }
-        ]
-    },
-    {
-        "title": "Learning",
-        "icon": "book",
-        "points": [
-            {
-                "title": "Currently: ",
-                "text": "GraphQL, Docker"
-            },
-            {
-                "title": "On The Radar: ",
-                "text": "Kubernetes, SEO"
-            }
-        ]
-    },
-    {
-        "title": "Hacking On",
-        "icon": "webdev",
-        "points": [
-            {
-                "text": "Finding a full-time position"
-            },
-            {
-                "text": "Volunteering as part of the ASU Pro EPICS Program"
-            }
-        ]
-    }
+  {
+    "title": "Toolbox",
+    "icon": "toolbox",
+    "points": [
+      {
+        "title": "Languages and Frameworks: ",
+        "text": "Python, JavaScript, HTML, CSS, ReactJS, React Native, GatsbyJS, Django, Flask, GraphQL, SQL"
+      },
+      {
+        "title": "Databases: ",
+        "text": "MongoDB, Firebase, PostgreSQL, Amazon DynamoDB"
+      },
+      {
+        "title": "Other Tools: ",
+        "text": "AWS, Git, Heroku, Netlify, Windows, Unix/Linux"
+      }
+    ]
+  },
+  {
+    "title": "Learning",
+    "icon": "book",
+    "points": [
+      {
+        "title": "Currently: ",
+        "text": "TypeScript, Docker"
+      },
+      {
+        "title": "On The Radar: ",
+        "text": "Kubernetes, SEO"
+      }
+    ]
+  },
+  {
+    "title": "Hacking On",
+    "icon": "webdev",
+    "points": [
+      {
+        "text": "Finding a full-time position"
+      },
+      {
+        "text": "Volunteering as part of the ASU Pro EPICS Program"
+      }
+    ]
+  }
 ]
