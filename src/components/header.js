@@ -108,7 +108,7 @@ export default function MenuAppBar() {
                             </ListItem>
                             <ListItem>
                               <OutboundLink
-                                href="https://drive.google.com/file/d/1xEw9tWVo6iLID0er-15dQxaZzfcXW0Fz/view?usp=sharing"
+                                href="https://drive.google.com/file/d/1omPyRDaoWdnubhsvcamz5nNvc-ucO2-C/view?usp=sharing"
                                 target="_blank"
                                 style={{textDecoration: 'none' }}
                               >
@@ -131,7 +131,7 @@ export default function MenuAppBar() {
                         <NavBarLink to="projects" name="Projects"/>
                         <NavBarLink to="contact" name="Contact"/>
                         <OutboundLink
-                          href="https://drive.google.com/file/d/1xEw9tWVo6iLID0er-15dQxaZzfcXW0Fz/view?usp=sharing"
+                          href="https://drive.google.com/file/d/1omPyRDaoWdnubhsvcamz5nNvc-ucO2-C/view?usp=sharing"
                           target="_blank"
                           style={{textDecoration: "none" }}
                         >
